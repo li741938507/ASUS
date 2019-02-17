@@ -1,0 +1,2982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华硕官网首页</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            family:"微软雅黑";
+        }
+        .header{
+            width:100%;
+
+        }
+        .head_top{
+            width:100%;
+            height:40px;
+            background-color:#404040;
+        }
+        .head_top_l{
+            float:left;
+            height:40px;
+            width:370px;
+            line-height:40px;
+            margin-left:70px;
+
+        }
+        .head_top_l .link{
+            font-size:14px;
+            color:#b2b2b2;
+            margin:0 10px;
+            text-decoration: none;
+        }
+        .head_top_r{
+            float:right;
+            width:430px;
+            height:40px;
+            line-height:40px;
+            margin-left:440px;
+
+        }
+        .head_top_r_ul li{
+            list-style:none;
+            float:left;
+            margin:0 15px;
+            font-size:14px;
+        }
+        .dlzc{
+            color:#b2b2b2;
+        }
+        .head_top_r_ul li a:hover{
+            color:#fff;
+        }
+        .head_top_r_ul .lastli a:hover{
+            color:#b2b2b2;
+        }
+        .head_top_r_ul li a{
+            color:#b2b2b2;
+            text-decoration: none;
+        }
+        .head_huashuo{
+            clear:both;
+            width:100%;
+            height:100px;
+        }
+        .huashuo_content{
+            width:100%;
+            padding-top:33px;
+        }
+        .huashuo_content img{
+            float:left;
+            width:150px;
+            height:60px;
+            margin-left:60px;
+        }
+        .huashuo_nav{
+            float:left;
+            display:inline-block;
+            width:620px;
+            height:40px;
+            margin:10px 0px 10px 66px;
+        }
+        .huashuo_nav a{
+            float:left;
+            display:inline-block;
+            width:180px;
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+            margin-right:20px;
+        }
+        .huashuo_r{
+            float:left;
+            position: relative;
+        }
+
+        .huashuo_input{
+            width:305px;
+            height:40px;
+            float:left;
+			border: 1px solid #a29e9f;
+        }
+        .ininput_l{
+            position: absolute;
+            top:12px;
+            left:95px;
+            z-index: 1;
+            width:105px;
+            height:22px;
+            text-decoration: none;
+        }
+        .ininput_r{
+            position: absolute;
+            top:12px;
+            left:230px;
+            z-index: 1;
+            width:50px;
+            height:22px;
+            text-decoration: none;
+        }
+        .huashuo_r_t a{
+            float: left;
+            padding: 0 10px;
+            background-color: #d9d9d9;
+            border-radius: 5px;
+            margin: 0 4px;
+            height: 22px;
+            line-height: 22px;
+            color: #353535;
+            font-size: 12px;
+        }
+        .huashuo_r_t button{
+            width:40px;
+            height:40px;
+            border: 1px solid #a29e9f;
+            background-color: #fff;
+            vertical-align: top;
+            box-sizing: content-box;
+            display:inline-block;
+            float:left;
+            border-left:none;
+        }
+        button:hover{
+            cursor:pointer;
+            background-color:blue;
+        }
+      .huashuo_r_t button span{
+            background:url(imgs/icon.jpg)no-repeat center;
+            display:block;
+            width:18px;
+            height:20px;
+            margin:0 auto;
+        }
+        .huashuo_r_b{
+            float:left;
+            margin-top:5px;
+            width:374px;
+            height:22px;
+        }
+        .huashuo_r_b a{
+            font-size: 14px;
+            line-height: 22px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #666666;
+        }
+      .head_tupian{
+          clear:both;
+          width:100%;
+          height:500px;
+          position: relative;
+          padding-top:21px;
+          /*background-image:url(imgs/lunhuan1.jpg);*/
+        }
+      .lunhuan{
+          width:100%;
+          height:500px;
+      }
+      #pic{
+          position: absolute;
+          top:21px;
+      }
+        .tupian_l_ul{
+            width:234px;
+            height:500px;
+            position: absolute;
+            top:21px;
+            left:60px;
+            z-index: 1;
+            background-color: rgba(0,0,0,.7);
+            list-style:none;
+            clear:both;
+        }
+        .tupian_l_ul li{
+            height:40px;
+            padding-left:16px;
+            margin-bottom:22px;
+            line-height:40px;
+
+        }
+        .tupian_l_ul li a{
+            color: #f2f2f2;
+            font-size:16px;
+            text-decoration: none;
+        }
+        .tupian_li1{
+            margin-top:10px;
+        }
+        .tupian_l_ul li:hover{
+            cursor:pointer;
+            background-color:cornflowerblue;
+        }
+        .tupian_l-none{
+            width:808px;
+            position: absolute;
+            left: 290px;
+            top: 21px;
+            background-color: #fff;
+            display:none;
+            z-index: 9998;
+            overflow: hidden;
+            min-height: 500px;
+        }
+        .tupian_l-none-l{
+            width: 460px;
+            float:left;
+
+        }
+        .tupian_l-none-l ul{
+            list-style:none;
+        }
+        .tupian_l-none-l li{
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            height:40px;
+        }
+        .tupian_l-none-l .li2{
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            height:65px;
+        }
+        .tupian_l-none-l li .a1 {
+              float:left;
+              color: #000;
+              height: 40px;
+              line-height: 20px;
+              width: 154px;
+              padding-left: 10px;
+              font-size:14px;
+          }
+        .a1 img{
+            float:left;
+        }
+        .tupian_l-none-l li .a2 {
+            float:left;
+            color: #000;
+            height: 65px;
+            line-height: 20px;
+            width: 154px;
+            padding-left: 10px;
+            font-size:14px;
+        }
+        .a2 img{
+            float:left;
+        }
+        .tupian_l-none-l li span{
+            float: left;
+            width: 72px;
+            max-height: 40px;
+            overflow: hidden;
+            vertical-align: middle;
+            line-height: 40px;
+        }
+        /*.tupian_l-none-l li div{
+            float:left;
+            margin-left:15px;
+        }*/
+        .tupian_l-none-l li div a{
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            color: #3f3a39;
+            text-decoration: none;
+            font-size:14px;
+        }
+        .tupian_l-none-l li div a:hover{
+            color: #00a8ff;
+        }
+        .tupian_l-none-r{
+            width: 345px;
+            padding-left: 3px;
+            height: 500px;
+            float:left;
+        }
+        .tupian_r ul{
+            position: absolute;
+            bottom:8px;
+            left: 50%;
+            text-align: center;
+            z-index: 2;
+            list-style: none;
+            margin-left:42px;
+            padding: 0;
+        }
+
+        /*.tupian_r_ul{
+             clear:both;
+             width:100%;
+             height:500px;
+         }*/
+
+        .tupian_r_ul li{
+            float:left;
+            width:10px;
+            height:10px;
+            border-radius: 5px;
+            line-height:10px;
+            z-index:5;
+            list-style:none;
+            margin:0px 10px;
+            cursor: pointer;
+        }
+       .scroll_number_out{
+            background-color:#fff;
+
+        }
+        .scroll_number_over{
+            background-color:#00a8ff;
+        }
+        .head_page{
+            width:1230px;
+            height:167px;
+            margin:0 auto;
+            margin-top:33px;
+
+        }
+        .head_page_ul{
+            list-style:none;
+            width:234px;
+            height:125px;
+            float:left;
+            background-color:#666666;;
+        }
+        .head_page_ul li{
+            float:left;
+            width:116px;
+            height:61.5px;
+            border-right: 1px solid #828282;
+            border-bottom: 1px solid #828282;
+        }
+        .head_page_ul li a{
+            float:left;
+            width:116px;
+            height:61.5px;
+            font-size:14px;
+            color:#cfcfcf;
+            text-decoration:none;
+            text-align: center;
+            line-height:62.5px;
+        }
+        .head_page_r{
+            width:996px;
+            height:125px;
+            float:left;
+        }
+        .head_page_rimg{
+            float:left;
+            width:320px;
+            height:125px;
+            padding-left:12px;
+        }
+        .nav{
+            width:1226px;
+            height:991px;
+            margin:0 auto;
+            clear:both;
+        }
+        .nav_t{
+            width:1226px;
+            height:396px;
+            margin:0 auto;
+            clear:both;
+        }
+        .nav_b{
+            width:1226px;
+            height:425px;
+            margin:0 auto;
+            clear:both;
+        }
+        .page_t h2{
+              font-size: 24px;
+              font-weight: normal;
+              color: #4f4f4f;
+              line-height: 40px;
+              height: 40px;
+
+          }
+
+        .line{
+            border-left: 2px solid #00a8ff;
+            display: inline-block;
+            height: 24px;
+            margin-right: 14px;
+            font-style: normal;
+            vertical-align: -4px;
+
+        }
+        .page_b{
+            width:1226px;
+            height:340px;
+        }
+       .page_b_l{
+           float: left;
+           width: 400px;
+           height:340px;
+           overflow: hidden;
+           margin-right: 13px;
+        }
+        .page_b_l_div1{
+             width:400px;
+             height:106px;
+         }
+        .page_b_l_div1 a img{
+
+              width:200px;
+              height:106px;
+              float:left;
+          }
+        .page_b_l_div2{
+            width:400px;
+            height:87px;
+        }
+        .page_b_l_div2 div a img{
+
+            width:200px;
+            height:87px;
+            float:left;
+        }
+        .page_b_l_div{
+            width:400px;
+            height:193px;
+        }
+        .page_b_l_div div a img{
+            width:200px;
+            height:193px;
+            float:left;
+        }
+        .page_b_last{
+            float: left;
+            width: 400px;
+            height:340px;
+            overflow: hidden;
+        }
+        .page_b_last_div{
+            width:400px;
+            height:193px;
+        }
+        .page_b_last_div div a img{
+            width:200px;
+            height:193px;
+            float:left;
+        }
+        .page_b_ul{
+            list-style:none;
+            width:100%;
+            heiht:400px;
+        }
+        .page_b_item{
+            float:left;
+            width:244px;
+            height:398px;
+            border: 1px solid #cccccc;
+            border-right: none;
+            position: relative;
+        }
+        .page_b_pic{
+            width: 244px;
+            height: 244px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .page_b_name{
+            text-align: center;
+            height: 48px;
+            line-height: 24px;
+            font-size: 14px;
+            padding: 0 18px;
+        }
+        .page_b_name a{
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .page_name_p{
+            line-height: 20px;
+            height: 22px;
+            overflow: hidden;
+            text-align:center;
+        }
+        .page_b_price{
+            font-size: 16px;
+            color: #fc0100;
+            text-align: center;
+            line-height: 24px;
+            margin-top: 10px;
+        }
+        .nav_last{
+            width:1226px;
+            height:120px;
+            margin:0 auto;
+            margin-top:50px;
+            clear:both;
+
+        }
+       /* .nav_last_l{
+            float:left;
+        }*/
+        /*.nav_last_r{
+            float:right;
+        }*/
+        .content{
+            
+            width:100%;
+            background-color: #f2f2f2;
+            margin-top: 50px;
+            padding-top: 5px;
+			float:left;
+        }
+        .content_all{
+            width:1226px;
+            height:717px;
+            margin:0px auto;
+
+        }
+        .content_t{
+            width:1226px;
+            height:40px;
+            margin-top:30px;
+            margin-bottom:12px;
+        }
+        .content h2{
+            font-size: 24px;
+            font-weight: normal;
+            color: #4f4f4f;
+            line-height: 40px;
+            height: 40px;
+            float:left;
+        }
+        .content_t_r{
+            height:40px;
+            float:right;
+            margin-right:15px;
+            line-height:40px;
+        }
+        .content_t_r a{
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+		.content_t_r a:hover{
+			color:#00a8ff;
+			}
+        .content_l1{
+            width: 244px;
+            height:630px;
+            float: left;
+        }
+        .content_l2 {
+            width: 777px;
+            height: 630px;
+            float: left;
+        }
+        .content_l2_t{
+            width:777px;
+            height:40px;
+            background-color: #e0e0e0;
+        }
+        .content_l2_t ul li{
+            list-style: none;
+            float:left;
+            width:155px;
+            height:40px;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .content_l2_t ul li:hover{
+            cursor: pointer;
+            background-color: #00a8ff;
+        }
+        .content_l2_t_on{
+            color: #fff;
+            background-color: #00a8ff;
+            border-right: 2px solid #00a8ff;
+        }
+        .content_l2_b{
+            width:777px;
+            height:590px;
+            position:relative;
+        }
+        .tab_body_item{
+            height: 590px;
+            background-color: #fff;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+
+        .content_l2_b ul{
+            list-style:none;
+        }
+        .content_l2_b_t{
+            position:relative;
+            width:777px;
+            height:295px;
+        }
+        .content_l2_b_t_ul2{
+            position: absolute;
+            bottom:10px;
+            left: 35%;
+            text-align: center;
+            z-index:10;
+            list-style: none;
+        }
+        .content_l2_b_t_ul2 li{
+            float:left;
+            width:10px;
+            height:10px;
+            border-radius: 5px;
+            line-height:10px;
+            z-index:5;
+            list-style:none;
+            margin:0 10px;
+            cursor: pointer;
+        }
+        .scroll_out{
+            background-color:#fff;
+            color:#00a8ff;
+        }
+        .scroll_over{
+            background-color:#00a8ff;
+            color:#fff;
+        }
+        .content_l2_b_b{
+            width:777px;
+            height:296px;
+            background:white;
+        }
+        .content_l2_b_bl{
+            width:258px;
+            height:295px;
+            float:left;
+            border-right: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .content_l2_b_bl:hover{
+
+        }
+
+
+        .content_l2_b_pic{
+            width:204px;
+            height:204px;
+            margin:0 auto;
+        }
+        .content_l2_b_pic img{
+            width:100%;
+            height:100%;
+        }
+        .content_l2_b_info{
+            width:258px;
+            height:44px;
+
+        }
+        .content_l2_b_info a{
+            text-decoration: none;
+            font-size: 14px;
+
+        }
+        .content_info_t{
+            line-height: 20px;
+            height: 22px;
+            text-align: center;
+            color: #434343;
+
+        }
+        .content_info_b{
+            line-height: 20px;
+            height: 22px;
+            text-align: center;
+            color: #898989;
+            overflow:hidden;
+        }
+        .content_l2_b_price{
+            font-size: 16px;
+            color: #fc0100;
+            text-align: center;
+            line-height: 24px;
+            margin-top: 10px;
+        }
+        .goods-item{
+            width: 258px;
+            height:278px;
+            float: left;
+            padding-bottom: 17px;
+            border-right: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .goods-pic{
+            width: 204px;
+            height: 204px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .goods-pic a{
+            display: table-cell;
+            width: 204px;
+            height: 204px;
+        }
+        .goods-pic img{
+            display: block;
+            margin: 0 auto;
+            max-width: 204px;
+            max-height: 204px;
+        }
+        .goods-info{
+            width:258px;
+            height:44px;
+        }
+        .goods-info a{
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .goods-info p{
+            line-height: 20px;
+            height: 22px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .goods-tit{
+            color: #434343;
+        }
+        .goods-des{
+            color: #898989;
+        }
+        .goods-price{
+            height: 30px;
+            line-height: 30px;
+            color: #f20a1a;
+            font-size: 16px;
+            text-align: center;
+        }
+        .content_l3{
+            width:205px;
+            height:630px;
+            float:left;
+        }
+
+        .hd{
+            width:205px;
+            height:40px;
+            line-height:40px;
+            background-color: #00a8ff;
+            text-align: center;
+        }
+        .hd span{
+            font-size:16px;
+            font-weight: normal;
+            color: #fff;
+        }
+        .bd{
+            width:205px;
+            height:590px;
+            overflow: hidden;
+            background:white;
+        }
+        .bd_ul{
+            height:590px;
+            width:189px;
+            list-style:none;
+            margin:0 auto;
+        }
+        .bd_ul li{
+            border-bottom:1px solid #e0e0e0;
+            width:189px;
+
+            padding-top: 6px;
+        }
+        .bd_ul .bd_hot{
+            width:189px;
+            height:90px;
+            padding-top: 6px;
+            position: relative;
+        }
+        .num1{
+            margin-left:0px;
+            margin-top: 3px;
+            color: #fff;
+            background: url(imgs/sales_chart.png)center center no-repeat;
+        }
+        .bd_ul .bd_on{
+            width:189px;
+            height:90px;
+            padding-top: 6px;
+            position: relative;
+        }
+        .bdli {
+            width: 189px;
+            height: 90px;
+            padding-top: 6px;
+        }
+        .bdli1{
+            
+            width:189px;
+            height:53px;
+            padding-top: 6px;
+        }
+        .bd_ul li span{
+            float: left;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+        }
+
+        .bd_pic{
+            width:88px;
+            height:88px;
+            margin-left:4px;
+            float:left;
+        }
+        .bd_pic img{
+            width:100%;
+            height:100%;
+        }
+        .bd_info{
+            width:87px;
+            height:60px;
+            margin:16px 0px 9px 6px;
+            float:left;
+        }
+        .bd_info_name{
+            width:87px;
+            height:48px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .bd_info_name h3{
+            width:87px;
+            height:32px;
+            overflow: hidden;
+        }
+        .bd_info_name a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .z-bottom{
+            display:none;
+        }
+        .z-top{
+            width:189px;
+            height:53px;
+
+        }
+        .z-top1{
+            float:left;
+            font-size: 14px;
+            line-height: 40px;
+            float: left;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+
+            color: #00a8ff;
+
+        }
+        .z-top2{
+            width: 149px;
+            height:40px;
+            float:left;
+            font-size: 14px;
+            line-height: 40px;
+            overflow: hidden;
+        }
+		.c_bc{
+			width:1246px;
+			height:320px;
+			float:left;
+			}
+		.c_bc a{
+			text-decoration:none;
+			}
+		.c_bc li{
+			float:left;
+			list-style:none;
+			width:234px;
+			height:298px;
+			background:#fff;
+			margin:5px 0 5px 15px;
+			}
+		.c_bc .li_1{
+			margin:5px 0;
+			}
+		.c_bc li img{
+			display:block;
+			margin:0 auto;
+			}
+		.c_bc .p_1{
+			color: #434343;
+			font-size:14px;
+			overflow:hidden;
+			text-align:center;
+			line-height: 20px;
+			height:22px;
+			}
+		.c_bc .p_2{
+			color: #898989;
+			line-height: 20px;
+			height:22px;
+			font-size:14px;
+			overflow:hidden;
+			text-align:center;
+			}
+		.c_bc .sp{
+			line-height: 30px;
+			color: #f20a1a;
+			font-size: 16px;
+			text-align: center;
+			}
+		.footer{
+            width:100%;
+            height:660px;
+			float:left;
+			margin-top:80px;
+        }
+		.footer li{
+			list-style:none;
+			}
+		
+        .service{
+            width:100%;
+            height:44px;
+            padding-top:18px;
+            border-bottom:1px solid #ccc;
+            text-align:center;
+            background-color: #fafafa;
+			margin:0 auto;
+        }
+		
+        .service-page{
+            width:1226px;
+            height:28px;
+            margin:0 auto;
+        }
+        .service-page li{
+            float:left;
+            width: 244px;
+            height: 28px;
+            font-size: 14px;
+            border-right: 1px solid #ccc;
+			position:relative;
+        }
+		.service img{
+			position:absolute;
+			left:60px;
+			}
+		.service span{
+			position:absolute;
+			left:93px;
+			top:6px;
+			color:#666;
+			}
+        .service-page .last{
+            border-right: none;
+        }
+        .helper{
+            width:100%;
+            height:255px;
+            padding-top:60px;
+            padding-bottom:80px;
+            background-color: #fafafa;
+        }
+        .helper-page{
+            width:1226px;
+            height:225px;
+            margin:0 auto;
+        }
+        .helper-item{
+            width:204px;
+            float: left;
+        }
+        .helper-ul{
+            list-style: none;
+        }
+        .helper-ul li a{
+            text-decoration: none;
+        }
+        .helper-ul .first{
+            line-height: 24px;
+            margin-bottom:15px;
+        }
+        .helper-ul .first a{
+            font-size: 16px;
+            color: #2d2d2d;
+        }
+        .helper-content{
+            line-height: 24px;
+        }
+        .helper-content a{
+            color: #666666;
+            font-size: 14px;
+        }
+        .helper-content a:hover{
+            color: #00a8ff;
+        }
+        .footer-info{
+            width:100%;
+            height:182px;
+            background-color: #fff;
+            padding-top: 20px;
+        }
+        .theme-footer{
+            width:1349px;
+            height:172px;
+            text-align: center;
+            line-height: 1.8;
+            margin-top: 10px;
+            font-size:12px;
+            margin:0 auto;
+        }
+        .theme-footer a{
+            color: #666666;
+            font-size: 14px;
+        }
+        .theme-footer a:hover{
+            color: #00a8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head_top">
+            <div class="head_top_l">
+                <a href="服务网点查询/服务网点查询.html" class="link">服务网点查询</a>
+                <a href="驱动下载/驱动下载.html" class="link">驱动下载</a>
+                <a href="驱动下载/驱动下载.html" class="link">华硕智汇家</a>
+                <a href="ZenCare/ZenCare.html" class="link">ZenCare</a>
+            </div>
+            <div class="head_top_r">
+                <ul class="head_top_r_ul">
+                    <li class="dlzc">
+                        <a href="denglu.html">登陆</a>
+                        |
+                        <a href="zhuce.html">注册</a>
+                    </li>
+                    <li><a href="消息/消息.html">消息</a></li>
+                    <li><a href="我的订单/我的订单.html">我的订单</a></li>
+                    <li class="lastli"><a href="购物车/购物车.html">
+                        <i ></i>
+                        购物车
+                        <span>(</span>
+                        <b>0</b>
+                        <span>)</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head_huashuo">
+            <div class="huashuo_content">
+                <img src="imgs/huashuoshangcheng.png"/>
+                <div class="huashuo_nav">
+                    <a href="">618提前约惠，新品直降900</a>
+                    <a href="">店主主推新品PX554家用本</a>
+                    <a href="">以旧换新送立体头戴式耳机</a>
+                </div>
+                <div class="huashuo_r">
+                    <div class="huashuo_r_t">
+                        <input type="text"  placeholder="ASUS华硕商城"class="huashuo_input"/>
+                        <a href="" class="ininput_l">新飞行堡垒5代上市</a>
+                        <a href="" class="ininput_r">顽石5代</a>
+                        <button>
+                            <span class="huashuo_icon"></span>
+                        </button>
+                    </div>
+                    <div class="huashuo_r_b">
+                        <a href="">游戏本</a>
+                        <a href="">轻薄本</a>
+                        <a href="">限时特惠</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head_tupian">
+            <div class="lunhuan">
+                <ul class="">
+                    <li class="">
+                        <a href="">
+                            <img src="imgs/lunhuan1.jpg" id="pic"/>
+                        </a>
+                    </li>
+                    <!--<li class="">
+                        <a href="">
+                            <img style="display:none;" src="imgs/lunhuan2.jpg"/>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <img style="display:none;" src="imgs/lunhuan3.jpg"/>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <img style="display:none;" src="imgs/lunhuan4.jpg"/>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <img style="display:none;" src="imgs/lunhuan5.jpg"/>
+                        </a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="tupian_l">
+                <ul class="tupian_l_ul">
+                    <li class="tupian_li1" id="li1" onmouseover="showHide()" onmouseout="hideHide()"><a href="goumaiye.html">笔记本电脑</a></li>
+                    <li id="li2"><a href="">整机产品</a></li>
+                    <li id="li3"><a href="">手机/平板/数码</a></li>
+                    <li id="li4"><a href="">主板/显卡/显示器</a></li>
+                    <li id="li5"><a href="">键鼠外设</a></li>
+                    <li id="li6"><a href="">Zenbo/多媒体产品</a></li>
+                    <li id="li7"><a href="">周边配件/增值服务</a></li>
+                    <li id="li8"><a href="">网络产品</a></li>
+                </ul>
+            </div>
+            <div class="tupian_l-none" id="bjb" onmousemove="iMouseOver()" onmouseout="iMouseOut()">
+                <div class="tupian_l-none-l">
+                    <ul>
+                        <li>
+                            <a href="" class="a1">
+                                <img src="imgs/bjb1.jpg"/>
+                                <span>灵耀轻薄本</span>
+                            </a>
+                            <div>
+                                <a href="">灵耀3系列</a>
+                                <a href="">灵耀U系列</a>
+                                <a href="">灵耀S系列</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="a1">
+                                <img src="imgs/bjb2.jpg"/>
+                                <span>玩家国度</span>
+                            </a>
+                            <div>
+                                <a href="">ROG系列</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="a1">
+                                <img src="imgs/bjb3.jpg"/>
+                                <span>游戏笔记本</span>
+                            </a>
+                            <div>
+                                <a href="">顽石-FL/YX系列</a>
+                                <a href="">飞行堡垒-FX/ZX系列</a>
+                            </div>
+                        </li>
+                        <li class="li2">
+                            <a href="" class="a2">
+                                <img src="imgs/bjb4.jpg"/>
+                                <span>办公娱乐本</span>
+                            </a>
+                            <div>
+                                <a href="">效能先锋-A/K/X系列 </a>
+                                <a href="">学生助手-E系列 </a>
+                                <a href="">大屏影音-N/V系列 </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="a1">
+                                <img src="imgs/bjb5.jpg"/>
+                                <span>翻转变形本</span>
+                            </a>
+                            <div>
+                                <a href="">T/TP系列</a>
+                            </div>
+                        </li>
+                        <li class="li2">
+                            <a href="" class="a2">
+                                <img src="imgs/bjb6.jpg"/>
+                                <span>商用笔记本</span>
+                            </a>
+                            <div>
+                                <a href="">稳定便携P系列</a>
+                                <a href="">高端商务B系列</a>
+                                <a href="">主流办公Pro系列</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tupian_l-none-r">
+                    <img src="imgs/linyaox.jpg"/>
+                </div>
+            </div>
+            <div class="tupian_r">
+                <ul class="tupian_r_ul" id="scroll_number">
+                    <li class="scroll_number_over" onMouseOver="show(1)" onMouseOut="start()"></li>
+                    <li class="scroll_number_out"  onMouseOver="show(2)" onMouseOut="start()"></li>
+                    <li class="scroll_number_out" onMouseOver="show(3)" onMouseOut="start()"></li>
+                    <li class="scroll_number_out" onMouseOver="show(4)" onMouseOut="start()"></li>
+                    <li class="scroll_number_out" onMouseOver="show(5)" onMouseOut="start()"></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var index=1;
+            var time;
+            var pic=document.getElementById("pic");
+            time=setInterval("show()",3000);
+            function show(id) {
+                if (Number(id)) {
+                    index = id;
+                    clearInterval(time);
+                } else {
+                    index++;
+                    if (index ==6) {
+                        index = 1;
+                    }
+                }
+                pic.src = "imgs/lunhuan" + index + ".jpg";
+                var lis=document.querySelectorAll("#scroll_number li");
+                for(var i=0;i<lis.length;i++){
+                    lis[i].setAttribute("class","scroll_number_out");
+                    if(i==(index-1)){
+                        lis[i].setAttribute("class","scroll_number_over");
+                    }
+                }
+            }
+            function start(){
+                time=setInterval("show()",3000);
+            }
+        </script>
+        <script>
+        function $(did){
+            return document.getElementById(did);
+        }
+        var li1=$("li1");
+        var bjb=$("bjb");
+        var timer=null;
+        function showHide(){
+            bjb.style.display="block";
+            clearTimeout(timer);
+        }
+        function hideHide(){
+            timer=setTimeout(function(){
+                bjb.style.display="none";
+            },10);
+        }
+        function iMouseOver(){
+            clearTimeout(timer);
+            bjb.style.display="block";
+        }
+        function iMouseOut(){
+            bjb.style.display="none";
+        }
+    </script>
+
+        <div class="head_page">
+            <div class="head_page_l">
+                <ul class="head_page_ul">
+                    <li>
+                        <a href="">
+                            产品测评
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            销量排行
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                           意外险
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            以旧换新
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="head_page_r">
+                <div><img src="imgs/lijilingqu1.png" class="head_page_rimg"></div>
+                <div><img src="imgs/lijilingqu2.png" class="head_page_rimg"></div>
+                <div><img src="imgs/lijilingqu3.png" class="head_page_rimg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_t">
+            <div class="page_t">
+                <h2>
+                    <span class="line"></span>
+                    特色专题
+                </h2>
+            </div>
+            <div class="page_b">
+                <div class="page_b_l">
+                    <div>
+                        <a href=""><img src="imgs/page_b1.jpg" width="400px" height="147px"/></a>
+                    </div>
+                    <div class="page_b_l_div1">
+                        <div>
+                            <a href=""><img src="imgs/page_b2.jpg"  /></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="imgs/page_b3.jpg"  /></a>
+                        </div>
+                    </div>
+                    <div class="page_b_l_div2">
+                        <div>
+                            <a href=""><img src="imgs/page_b4.jpg"  /></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="imgs/page_b5.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page_b_l">
+                    <div>
+                        <a href=""><img src="imgs/page_b11.jpg" width="400px" height="147px"/></a>
+                    </div>
+                    <div class="page_b_l_div">
+                        <div>
+                            <a href=""><img src="imgs/page_b12.png"/></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="imgs/page_b13.png"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page_b_last">
+                    <div>
+                        <a href=""><img src="imgs/page_b21.jpg" width="400px" height="147px"/></a>
+                    </div>
+                    <div class="page_b_last_div">
+                        <div>
+                            <a href=""><img src="imgs/page_b22.png"/></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="imgs/page_b23.png"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_b">
+            <div class="page_t">
+                <h2>
+                    <span class="line"></span>
+                    爆款清单
+                </h2>
+            </div>
+            <ul class="page_b_ul">
+                <li class="page_b_item">
+                    <div class="page_b_pic">
+                        <a href=""><img src="imgs/page_t1.jpg"/></a>
+                    </div>
+                    <div class="page_b_name">
+                        <a href="">
+                            <p class="page_name_p">飞行堡垒5代FX80GM</p>
+                            <p class="page_name_p">i7-8750H / GTX1060</p>
+                        </a>
+                    </div>
+                    <div class="page_b_price">
+                        ￥8599
+                    </div>
+                </li>
+                <li class="page_b_item">
+                    <div class="page_b_pic">
+                        <a href=""><img src="imgs/page_t2.jpg"/></a>
+                    </div>
+                    <div class="page_b_name">
+                        <a href="goumaiye.html">
+                            <p class="page_name_p">主流家用办公笔记本PX554UB</p>
+                            <p class="page_name_p">i5-8250U / 专属指纹识别</p>
+                        </a>
+                    </div>
+                    <div class="page_b_price">
+                        ￥4299
+                    </div>
+                </li>
+                <li class="page_b_item">
+                    <div class="page_b_pic">
+                        <a href=""><img src="imgs/page_t3.jpg"/></a>
+                    </div>
+                    <div class="page_b_name">
+                        <a href="goumaiye.html">
+                            <p class="page_name_p">灵耀U4000UQ-轻薄笔记本-i5</p>
+                            <p class="page_name_p">6mm窄边框 / 全固态开机快</p>
+                        </a>
+                    </div>
+                    <div class="page_b_price">
+                        ￥4799
+                    </div>
+                </li>
+                <li class="page_b_item">
+                    <div class="page_b_pic">
+                        <a href=""><img src="imgs/page_t4.jpg"/></a>
+                    </div>
+                    <div class="page_b_name">
+                        <a href="goumaiye.html">
+                            <p class="page_name_p">飞行堡垒4代-FX63VD游戏本</p>
+                            <p class="page_name_p">铁甲神盾 / i7-7700HQ /GeForce® GTX1050</p>
+                        </a>
+                    </div>
+                    <div class="page_b_price">
+                        ￥5299
+                    </div>
+                </li>
+                <li class="page_b_item">
+                    <div class="page_b_pic">
+                        <a href=""><img src="imgs/page_t5.jpg"/></a>
+                    </div>
+                    <div class="page_b_name">
+                        <a href="goumaiye.html">
+                            <p class="page_name_p">飞行堡垒第五代FX80-火陨版</p>
+                            <p class="page_name_p">i7-8750H / 8GB 内存</p>
+                        </a>
+                    </div>
+                    <div class="page_b_price">
+                        ￥7199
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_last">
+            <!--<div class="nav_last_r">
+                <a href=""><img src="imgs/nav_last_r.jpg"/></a>
+            </div>-->
+           <div class="nav_last_l"><a href=""><img src="imgs/songdianyigpiao.jpg" /></a></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_all">
+        <div class="content_zq">
+            <div class="content_t">
+                <div>
+                    <h2>
+                        <span class="line"></span>
+                        1F 笔记本
+                    </h2>
+                </div>
+                <div class="content_t_r">
+                    <a href="">
+                        更多
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="content_l1">
+                <a href="">
+                    <img src="imgs/content_l1.jpg"/>
+                </a>
+            </div>
+            <div class="content_l2">
+                <div class="content_l2_t">
+                    <ul>
+                        <li class="content_l2_t_on" id="cz1">
+                            新品
+                        </li>
+                        <li id="cz2">
+                            轻薄本
+                        </li>
+                        <li id="cz3">
+                            游戏本
+                        </li>
+                        <li id="cz4">
+                            办公娱乐本
+                        </li>
+                        <li id="cz5">
+                            8代CPU专区
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_l2_b">
+                    <ul>
+                        <li class="tab_body_item" id="cb1">
+                            <div class="content_l2_b_t">
+                                <ul class="content_l2_b_t_ul1">
+                                    <li>
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/content_l2_b_t1.jpg" id="pic1"/>
+                                        </a>
+                                    </li>
+                                    <!--<li>
+                                        <a href=""><img src="imgs/content_l2_b_t2.jpg"/></a>
+                                    </li>imgs/content_l2_b_t
+                                    <li>
+                                        <a href=""><img src="imgs/content_l2_b_t3.jpg"/></a>
+                                    </li>-->
+                                </ul>
+                                <ul class="content_l2_b_t_ul2" id="b_t">
+                                    <li  class="scroll_over" onMouseOver="sh(1)" onMouseOut="st()"></li>
+                                    <li  class="scroll_out" onMouseOver="sh(2)" onMouseOut="st()"></li>
+                                    <li  class="scroll_out" onMouseOver="sh(3)" onMouseOut="st()"></li>
+                                </ul>
+                            </div>
+                            <script>
+                                function $(did){
+                                    return document.getElementById(did);
+                                }
+                                var pic1=$("pic1");
+                                var ind=1;
+                                var time;
+                                time=setInterval("sh()",2000);
+                                function sh(id){
+                                    if(Number(id)){
+                                        ind=id;
+                                        clearInterval(time);
+                                    }else{
+                                        ind++;
+                                        if(ind==4){
+                                            ind=1;
+                                        }
+                                    }
+                                    pic1.src="imgs/content_l2_b_t"+ind+".jpg";
+                                    var lis=document.querySelectorAll("#b_t li");
+                                    for(var i=0;i<lis.length;i++){
+                                        lis[i].setAttribute("class","scroll_out");
+                                        if(i==(ind-1)){
+                                            lis[i].setAttribute("class","scroll_over");
+                                        }
+                                    }
+                                }
+                                function st(){
+                                    time=setInterval("sh()",2000);
+                                }
+                            </script>
+                            <div class="content_l2_b_b">
+                                <div class="content_l2_b_bl">
+                                    <div class="content_l2_b_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/content_l2_b1.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="content_l2_b_info">
+                                        <a href="goumaiye.html">
+                                            <p class="content_info_t">主流家用办公笔记本PX554UB</p>
+                                            <p class="content_info_b">i5-8250U / 专属指纹识别</p>
+                                        </a>
+                                    </div>
+                                    <div class="content_l2_b_price">
+                                        <span>￥4299</span>
+                                    </div>
+                                </div>
+                                <div class="content_l2_b_b">
+                                    <div class="content_l2_b_bl">
+                                        <div class="content_l2_b_pic">
+                                            <a href="goumaiye.html">
+                                                <img src="imgs/content_l2_b2.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="content_l2_b_info">
+                                            <a href="goumaiye.html">
+                                                <p class="content_info_t">【新品预售】顽石轻薄娱乐本A505ZA</p>
+                                                <p class="content_info_b">双芯合璧 性能升级 / 薄约18.9mm</p>
+                                            </a>
+                                        </div>
+                                        <div class="content_l2_b_price">
+                                            <span>￥4429</span>
+                                        </div>
+                                    </div>
+                                    <div class="content_l2_b_b">
+                                        <div class="content_l2_b_bl">
+                                            <div class="content_l2_b_pic">
+                                                <a href="goumaiye.html">
+                                                    <img src="imgs/content_l2_b3.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="content_l2_b_info">
+                                                <a href="goumaiye.html">
+                                                    <p class="content_info_t">【新品】X441MB效能先锋娱乐本</p>
+                                                    <p class="content_info_b">2.33MM舒适键盘设计 / 24 CC大音盆扬声器</p>
+                                                </a>
+                                            </div>
+                                            <div class="content_l2_b_price">
+                                                <span>￥2999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab_body_item" style="display:none;" id="cb2" >
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l1.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【热销】灵耀U4100UN-轻薄笔记本</p>
+                                        <p class="goods-des">全新升级8代CPU /  IPS屏 / 全固态</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6199</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l2.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【直降800】灵耀U5100UQ-轻薄笔记本-i5</p>
+                                        <p class="goods-des">15.6英寸 / 窄边框 / 全固态</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5899</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l3.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀S5100UA-轻薄笔记本-i5</p>
+                                        <p class="goods-des">15.6英寸 / 窄边框 / 双硬盘</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5599</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l4.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【最高降700】灵耀RX310UQ-轻薄笔记本</p>
+                                        <p class="goods-des">13.3英寸 / 全固态 / IPS屏</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6799</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l5.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀3 Zenbook 3U轻薄本-i5</p>
+                                        <p class="goods-des">轻约910g / 薄约11.9mm</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>9249</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l6.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀S4100UQ-轻薄笔记本-i5</p>
+                                        <p class="goods-des"> 14英寸 / 窄边框 / GF930MX 独显</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5099</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab_body_item" style="display:none;" id="cb3">
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/y1.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">新顽石5五代标准版</p>
+                                        <p class="goods-des">i7-8550U  / 940MX / 多彩时尚</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>4799</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/y2.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">飞行堡垒5代FX80GM</p>
+                                        <p class="goods-des">i7-8750H / GTX1060</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>8599</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l3.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">
+                                            新顽石5五代标准版                </p>
+                                        <p class="goods-des">
+                                            i7-8550U  / 940MX / 多彩时尚                </p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5599</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l4.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">飞行堡垒4代-FX63VD游戏本  </p>
+                                        <p class="goods-des">
+                                            铁甲神盾 / i7-7700HQ /GeForce® GTX1050                </p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6799</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l5.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">
+                                            飞行堡垒4代-FX63VD游戏本                </p>
+                                        <p class="goods-des">
+                                            铁甲神盾 / i7-7700HQ / GeForce® GTX1050                </p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>9249</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l6.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">
+                                            新顽石5五代电竞版-8代CPU                </p>
+                                        <p class="goods-des">
+                                            MX150独显 / i7-8550U                </p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5099</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab_body_item" style="display:none;" id="cb4">
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l1.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【热销】灵耀U4100UN-轻薄笔记本</p>
+                                        <p class="goods-des">全新升级8代CPU /  IPS屏 / 全固态</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6199</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l2.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【直降800】灵耀U5100UQ-轻薄笔记本-i5</p>
+                                        <p class="goods-des">15.6英寸 / 窄边框 / 全固态</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5899</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l3.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀S5100UA-轻薄笔记本-i5</p>
+                                        <p class="goods-des">15.6英寸 / 窄边框 / 双硬盘</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5599</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l4.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【最高降700】灵耀RX310UQ-轻薄笔记本</p>
+                                        <p class="goods-des">13.3英寸 / 全固态 / IPS屏</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6799</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l5.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀3 Zenbook 3U轻薄本-i5</p>
+                                        <p class="goods-des">轻约910g / 薄约11.9mm</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>9249</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l6.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀S4100UQ-轻薄笔记本-i5</p>
+                                        <p class="goods-des"> 14英寸 / 窄边框 / GF930MX 独显</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5099</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab_body_item" style="display:none;" id="cb5">
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l1.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【热销】灵耀U4100UN-轻薄笔记本</p>
+                                        <p class="goods-des">全新升级8代CPU /  IPS屏 / 全固态</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6199</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l2.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【直降800】灵耀U5100UQ-轻薄笔记本-i5</p>
+                                        <p class="goods-des">15.6英寸 / 窄边框 / 全固态</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5899</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l3.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀S5100UA-轻薄笔记本-i5</p>
+                                        <p class="goods-des">15.6英寸 / 窄边框 / 双硬盘</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5599</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l4.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">【最高降700】灵耀RX310UQ-轻薄笔记本</p>
+                                        <p class="goods-des">13.3英寸 / 全固态 / IPS屏</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>6799</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l5.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀3 Zenbook 3U轻薄本-i5</p>
+                                        <p class="goods-des">轻约910g / 薄约11.9mm</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>9249</span>
+                                </div>
+                            </div>
+                            <div class="goods-item">
+                                <div class="goods-pic">
+                                    <a href="">
+                                        <img src="imgs/l6.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-info">
+                                    <a href="">
+                                        <p class="goods-tit">灵耀S4100UQ-轻薄笔记本-i5</p>
+                                        <p class="goods-des"> 14英寸 / 窄边框 / GF930MX 独显</p>
+                                    </a>
+                                </div>
+                                <div class="goods-price">
+                                    <span>5099</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                function $(did){
+                    return document.getElementById(did);
+                }
+                var cz1=$("cz1");
+                var cz2=$("cz2");
+                var cz3=$("cz3");
+                var cz4=$("cz4");
+                var cz5=$("cz5");
+                var cb1=$("cb1");
+                var cb2=$("cb2");
+                var cb3=$("cb3");
+                var cb4=$("cb4");
+                var cb5=$("cb5");
+
+                cz1.onmouseover=function(){
+                    cb1.style.display="block";
+                    cb2.style.display="none";
+                    cb3.style.display="none";
+                    cb4.style.display="none";
+                    cb5.style.display="none";
+                }
+                cz2.onmouseover=function(){
+                    cb1.style.display="none";
+                    cb2.style.display="block";
+                    cb3.style.display="none";
+                    cb4.style.display="none";
+                    cb5.style.display="none";
+                }
+                cz3.onmouseover=function(){
+                    cb1.style.display="none";
+                    cb2.style.display="none";
+                    cb3.style.display="block";
+                    cb4.style.display="none";
+                    cb5.style.display="none";
+                }
+                cz4.onmouseover=function(){
+                    cb1.style.display="none";
+                    cb2.style.display="none";
+                    cb3.style.display="none";
+                    cb4.style.display="block";
+                    cb5.style.display="none";
+                }
+                cz5.onmouseover=function(){
+                    cb1.style.display="none";
+                    cb2.style.display="none";
+                    cb3.style.display="none";
+                    cb4.style.display="none";
+                    cb5.style.display="block";
+                }
+
+
+                /*function $(did){
+                     return document.getElementById(did);
+                 }
+                 var cz1=$("cz1");
+                 var cz2=$("cz2");
+                 var cz3=$("cz3");
+                 var cz4=$("cz4");
+                 var cz5=$("cz5");
+                 var cb1=$("cb1");
+                 var cb2=$("cb2");
+                 var cb3=$("cb3");
+                 var cb4=$("cb4");
+                 var cb5=$("cb5");
+
+                function zA(){
+                     show("cz1");
+                 }
+                 function zB(){
+                     show("cz1");
+                 }
+                 function show(id){
+                     for(var i=1;i<6;i++){
+                         if(("cz"+i)!=id){
+                             ("cb"+i).style.display="none";
+                         }else{
+                             ("cb"+i).style.display="block";
+                         }
+                     }
+                 }*/
+
+
+
+                /*function showHide(){
+                    bjb.style.display="block";
+                    clearTimeout(timer);
+                }
+                function hideHide(){
+                    timer=setTimeout(function(){
+                        bjb.style.display="none";
+                    },10);
+                }
+                function iMouseOver(){
+                    clearTimeout(timer);
+                    bjb.style.display="block";
+                }
+                function iMouseOut(){
+                    bjb.style.display="none";
+                }*/
+
+            </script>
+            <div class="content_l3">
+                <div class="content_l3_all">
+                    <div class="hd">
+                        <span>本类销售榜</span>
+                    </div>
+                    <div class="bd">
+                        <ul class="bd_ul">
+                            <li class="bd_hot">
+                                <span class="num1">1</span>
+                                <div class="bd_pic">
+                                    <a href="goumaiye.html">
+                                        <img src="imgs/bd1.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="bd_info">
+                                    <h3 class="bd_info_name">
+                                        <a href="goumaiye.html">飞行堡垒第五代FX80-火陨版</a>
+                                    </h3>
+                                    <div class="bd_info_price">
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="bd_hot">
+                                <span class="num1">2</span>
+                                <div class="bd_pic">
+                                    <a href="goumaiye.html">
+                                        <img src="imgs/bd2.jpg"/>
+                                    </a>
+                                </div>
+                                <div class="bd_info">
+                                    <h3 class="bd_info_name">
+                                        <a href="goumaiye.html">灵耀U4100UN-轻薄笔记本</a>
+                                    </h3>
+                                    <div class="bd_info_price">
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="bd_on"  id="bd3" onmouseover="oVer3()">
+                                <div class="z-top" style="display:none;" id="zt3">
+                                    <p class="z-top1">3</p>
+                                    <p class="z-top2">
+                                        玩家国度-GFX72VS游戏本            </p>
+                                </div>
+                                <div id="zb3">
+                                    <span class="num1">3</span>
+                                    <div class="bd_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/bd3.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="bd_info">
+                                        <h3 class="bd_info_name">
+                                            <a href="goumaiye.html">
+                                                玩家国度-GFX72VS游戏本            </a>
+                                        </h3>
+                                        <div class="bd_info_price">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li  id="bd4"  onmouseover="oVer4()">
+                                <div class="z-top" id="zt4">
+                                    <p class="z-top1">4</p>
+                                    <p class="z-top2">
+                                        玩家国度-S5AS 枪神版游戏本            </p>
+                                </div>
+                                <div class="z-bottom" id="zb4">
+                                    <span class="num1">4</span>
+                                    <div class="bd_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/bd4.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="bd_info">
+                                        <h3 class="bd_info_name">
+                                            <a href="goumaiye.html">
+                                                玩家国度-S5AS 枪神版游戏本            </a>
+                                        </h3>
+                                        <div class="bd_info_price">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li   id="bd5"  onmouseover="oVer5()">
+                                <div class="z-top" id="zt5">
+                                    <p class="z-top1">5</p>
+                                    <p class="z-top2">
+                                        飞行堡垒-NX580VD游戏本            </p>
+                                </div>
+                                <div class="z-bottom" id="zb5">
+                                    <span class="num1">5</span>
+                                    <div class="bd_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/bd5.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="bd_info">
+                                        <h3 class="bd_info_name">
+                                            <a href="">
+                                                飞行堡垒-NX580VD游戏本            </a>
+                                        </h3>
+                                        <div class="bd_info_price">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li  id="bd6" onmouseover="oVer6()">
+                                <div class="z-top" id="zt6">
+                                    <p class="z-top1">6</p>
+                                    <p class="z-top2">
+                                        飞行堡垒4代-FX63VD游戏本            </p>
+                                </div>
+                                <div class="z-bottom" id="zb6">
+                                    <span class="num1">6</span>
+                                    <div class="bd_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/bd6.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="bd_info">
+                                        <h3 class="bd_info_name">
+                                            <a href="goumaiye.html">
+                                                飞行堡垒4代-FX63VD游戏本            </a>
+                                        </h3>
+                                        <div class="bd_info_price">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li  id="bd7" onmouseover="oVer7()">
+                                <div class="z-top" id="zt7">
+                                    <p class="z-top1">7</p>
+                                    <p class="z-top2">
+                                        玩家国度-S5AS 枪神版游戏本            </p>
+                                </div>
+                                <div class="z-bottom" id="zb7">
+                                    <span class="num1">7</span>
+                                    <div class="bd_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/bd7.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="bd_info">
+                                        <h3 class="bd_info_name">
+                                            <a href="goumaiye.html">
+                                                玩家国度-S5AS 枪神版游戏本            </a>
+                                        </h3>
+                                        <div class="bd_info_price">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li  id="bd8" onmouseover="oVer8()">
+                                <div class="z-top" id="zt8">
+                                    <p class="z-top1">8</p>
+                                    <p class="z-top2">
+                                        灵耀S5100UA-轻薄笔记本-i5            </p>
+                                </div>
+                                <div class="z-bottom" id="zb8">
+                                    <span class="num1">8</span>
+                                    <div class="bd_pic">
+                                        <a href="goumaiye.html">
+                                            <img src="imgs/bd8.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="bd_info">
+                                        <h3 class="bd_info_name">
+                                            <a href="goumaiye.html">
+                                                灵耀S5100UA-轻薄笔记本-i5            </a>
+                                        </h3>
+                                        <div class="bd_info_price">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                    function $(did){
+                        return document.getElementById(did);
+                    }
+                    var bd3=$("bd3");
+                    var bd4=$("bd4");
+                    var bd5=$("bd5");
+                    var bd6=$("bd6");
+                    var bd7=$("bd7");
+                    var bd8=$("bd8");
+                    var zb3=$("zb3");
+                    var zb4=$("zb4");
+                    var zb5=$("zb5");
+                    var zb6=$("zb6");
+                    var zb7=$("zb7");
+                    var zb8=$("zb8");
+                    var zt3=$("zt3");
+                    var zt4=$("zt4");
+                    var zt5=$("zt5");
+                    var zt6=$("zt6");
+                    var zt7=$("zt7");
+                    var zt8=$("zt8");
+
+                        /**function oVer(id){
+                        for(var k=3;k<9;k++){
+                            var n;
+                            var m;
+                            n=("zb"+k);
+                            m=("zt"+k);
+                            if(k==id){
+                                n.style.display="block";
+                                m.style.display="none";
+                           }else{
+                                n.style.display="none";
+                                m.style.display="block";
+                            }
+                       }
+                        pP(id);
+                    }**/
+                        function oVer3(){
+                            zb3.style.display="block";
+                            zt3.style.display="none";
+                            zb4.style.display="none";
+                            zt4.style.display="block";
+                            zb5.style.display="none";
+                            zt5.style.display="block";
+                            zb6.style.display="none";
+                            zt6.style.display="block";
+                            zb7.style.display="none";
+                        zt7.style.display="block";
+                        zb8.style.display="none";
+                        zt8.style.display="block";
+                        pP(3);
+                    }
+                    function oVer4(){
+                        zb4.style.display="block";
+                        zt4.style.display="none";
+                        zb3.style.display="none";
+                        zt3.style.display="block";
+                        zb5.style.display="none";
+                        zt5.style.display="block";
+                        zb6.style.display="none";
+                        zt6.style.display="block";
+                        zb7.style.display="none";
+                        zt7.style.display="block";
+                        zb8.style.display="none";
+                        zt8.style.display="block";
+                        pP(4);
+                    }
+                    function oVer5(){
+                        zb5.style.display="block";
+                        zt5.style.display="none";
+                        zb3.style.display="none";
+                        zt3.style.display="block";
+                        zb4.style.display="none";
+                        zt4.style.display="block";
+                        zb6.style.display="none";
+                        zt6.style.display="block";
+                        zb7.style.display="none";
+                        zt7.style.display="block";
+                        zb8.style.display="none";
+                        zt8.style.display="block";
+                        pP(5);
+                    }
+                    function oVer6(){
+                        zb6.style.display="block";
+                        zt6.style.display="none";
+                        zb3.style.display="none";
+                        zt3.style.display="block";
+                        zb5.style.display="none";
+                        zt5.style.display="block";
+                        zb4.style.display="none";
+                        zt4.style.display="block";
+                        zb7.style.display="none";
+                        zt7.style.display="block";
+                        zb8.style.display="none";
+                        zt8.style.display="block";
+                        pP(6);
+                    }
+                    function oVer7(){
+                        zb7.style.display="block";
+                        zt7.style.display="none";
+                        zb3.style.display="none";
+                        zt3.style.display="block";
+                        zb5.style.display="none";
+                        zt5.style.display="block";
+                        zb6.style.display="none";
+                        zt6.style.display="block";
+                        zb4.style.display="none";
+                        zt4.style.display="block";
+                        zb8.style.display="none";
+                        zt8.style.display="block";
+                        pP(7);
+                    }
+                    function oVer8(){
+                        zb8.style.display="block";
+                        zt8.style.display="none";
+                        zb3.style.display="none";
+                        zt3.style.display="block";
+                        zb5.style.display="none";
+                        zt5.style.display="block";
+                        zb6.style.display="none";
+                        zt6.style.display="block";
+                        zb7.style.display="none";
+                        zt7.style.display="block";
+                        zb4.style.display="none";
+                        zt4.style.display="block";
+                        pP(8);
+                    }
+                    var lis=document.querySelectorAll(".bd_ul li");
+                    function pP(id){
+                        if(Number(id)){
+                            for(var n=2;n<lis.length;n++){
+
+                                if(n==(id-1)){
+                                    lis[n].setAttribute("class","bdli");
+                                }
+                                else{
+                                    lis[n].setAttribute("class","bdli1");
+                                }
+
+                            }
+                        }
+                    }
+
+            </script>
+        	 <div class="content">
+            <div class="content_all">
+                <div class="content_zq">
+                    <div class="content_t">
+                        <div>
+                            <h2>
+                                <span class="line"></span>
+                                2F 电竞游戏专区
+                            </h2>
+                        </div>
+                        <div class="content_t_r">
+                            <a href="">
+                                更多
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content_l1">
+                        <a href="">
+                            <img src="imgs/cf986b178a086b5ad527a6be75d721d90cac5e45.jpg"/>
+                        </a>
+                    </div>
+                    <div class="content_l2">
+                        <div class="content_l2_t">
+                            <ul>
+                                <li class="content_l2_t_on">
+                                    游戏本新品
+                                </li>
+                                <li>
+                                    玩家国度游戏本
+                                </li>
+                                <li>
+                                    电竞游戏主机
+                                </li>
+                                <li>
+                                    电竞组装
+                                </li>
+                                <li>
+                                    8代CPU专区
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content_l2_b">
+                            <ul>
+                                <li>
+                                    <div class="content_l2_b_t">
+                                        <ul class="content_l2_b_t_ul1">
+                                            <li>
+                                                <a href=""><img src="imgs/1185483bf2272080597f2edd39ff2be28e10a041.jpg"/></a>
+                                            </li>
+                                            <!--<li>
+                                                <a href=""><img src="imgs/content_l2_b_t2.jpg"/></a>
+                                            </li>
+                                            <li>
+                                                <a href=""><img src="imgs/content_l2_b_t3.jpg"/></a>
+                                            </li>-->
+                                        </ul>
+                                        <ul class="content_l2_b_t_ul2">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    <div class="content_l2_b_b">
+                                        <div class="content_l2_b_bl">
+                                            <div class="content_l2_b_pic">
+                                                <a href="">
+                                                    <img src="imgs/d73d168d136bb128016d89ad3684e13fee8f5509.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="content_l2_b_info">
+                                                <a href="">
+                                                    <p class="content_info_t">主流家用办公笔记本PX554UB</p>
+                                                    <p class="content_info_b">i5-8250U / 专属指纹识别</p>
+                                                </a>
+                                            </div>
+                                            <div class="content_l2_b_price">
+                                                <span>￥4299</span>
+                                            </div>
+                                        </div>
+                                        <div class="content_l2_b_b">
+                                            <div class="content_l2_b_bl">
+                                                <div class="content_l2_b_pic">
+                                                    <a href="">
+                                                        <img src="imgs/473f953b5f071f077e38a7c0bebc017a65fd6c85.jpg"/>
+                                                    </a>
+                                                </div>
+                                                <div class="content_l2_b_info">
+                                                    <a href="">
+                                                        <p class="content_info_t">【新品预售】顽石轻薄娱乐本A505ZA</p>
+                                                        <p class="content_info_b">双芯合璧 性能升级 / 薄约18.9mm</p>
+                                                    </a>
+                                                </div>
+                                                <div class="content_l2_b_price">
+                                                    <span>￥4429</span>
+                                                </div>
+                                            </div>
+                                            <div class="content_l2_b_b">
+                                                <div class="content_l2_b_bl">
+                                                    <div class="content_l2_b_pic">
+                                                        <a href="">
+                                                            <img src="imgs/c8f4f7f9309471dfc36f4acea0a5cc05b3cc653a.jpg"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="content_l2_b_info">
+                                                        <a href="">
+                                                            <p class="content_info_t">【新品】X441MB效能先锋娱乐本</p>
+                                                            <p class="content_info_b">2.33MM舒适键盘设计 / 24 CC大音盆扬声器</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="content_l2_b_price">
+                                                        <span>￥2999</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_l3">
+                        <div class="content_l3_all">
+                            <div class="hd">
+                                <span>本类销售榜</span>
+                            </div>
+                            <div class="bd">
+                                <ul class="bd_ul">
+                                    <li class="bd_hot">
+                                        <span class="num1">1</span>
+                                        <div class="bd_pic">
+                                            <a href="">
+                                                <img src="imgs/bd1.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="bd_info">
+                                            <h3 class="bd_info_name">
+                                                <a href="">飞行堡垒第五代FX80-火陨版</a>
+                                            </h3>
+                                            <div class="bd_info_price">
+                                                <i></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bd_hot">
+                                        <span class="num1">2</span>
+                                        <div class="bd_pic">
+                                            <a href="">
+                                                <img src="imgs/bd2.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="bd_info">
+                                            <h3 class="bd_info_name">
+                                                <a href="">灵耀U4100UN-轻薄笔记本</a>
+                                            </h3>
+                                            <div class="bd_info_price">
+                                                <i></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bd_on">
+                                        <span class="num1">3</span>
+                                        <div class="bd_pic">
+                                            <a href="">
+                                                <img src="imgs/bd3.jpg"/>
+                                            </a>
+                                        </div>
+                                        <div class="bd_info">
+                                            <h3 class="bd_info_name">
+                                                <a href="">
+                                                    玩家国度-GFX72VS游戏本            </a>
+                                            </h3>
+                                            <div class="bd_info_price">
+                                                <i></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bd_li">
+                                        <div class="z-top">
+                                            <p class="z-top1">4</p>
+                                            <p class="z-top2">
+                                                玩家国度-S5AS 枪神版游戏本            </p>
+                                        </div>
+                                        <div class="z-bottom">
+                                            <span class="num1">4</span>
+                                            <div class="bd_pic">
+                                                <a href="">
+                                                    <img src="imgs/bd4.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="bd_info">
+                                                <h3 class="bd_info_name">
+                                                    <a href="">
+                                                        玩家国度-S5AS 枪神版游戏本            </a>
+                                                </h3>
+                                                <div class="bd_info_price">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bd_li">
+                                        <div class="z-top">
+                                            <p class="z-top1">5</p>
+                                            <p class="z-top2">
+                                                飞行堡垒-NX580VD游戏本            </p>
+                                        </div>
+                                        <div class="z-bottom">
+                                            <span class="num1">5</span>
+                                            <div class="bd_pic">
+                                                <a href="">
+                                                    <img src="imgs/bd5.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="bd_info">
+                                                <h3 class="bd_info_name">
+                                                    <a href="">
+                                                        飞行堡垒-NX580VD游戏本            </a>
+                                                </h3>
+                                                <div class="bd_info_price">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bd_li">
+                                        <div class="z-top">
+                                            <p class="z-top1">6</p>
+                                            <p class="z-top2">
+                                                飞行堡垒4代-FX63VD游戏本            </p>
+                                        </div>
+                                        <div class="z-bottom">
+                                            <span class="num1">6</span>
+                                            <div class="bd_pic">
+                                                <a href="">
+                                                    <img src="imgs/bd6.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="bd_info">
+                                                <h3 class="bd_info_name">
+                                                    <a href="">
+                                                        飞行堡垒4代-FX63VD游戏本            </a>
+                                                </h3>
+                                                <div class="bd_info_price">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bd_li">
+                                        <div class="z-top">
+                                            <p class="z-top1">7</p>
+                                            <p class="z-top2">
+                                                玩家国度-S5AS 枪神版游戏本            </p>
+                                        </div>
+                                        <div class="z-bottom">
+                                            <span class="num1">7</span>
+                                            <div class="bd_pic">
+                                                <a href="">
+                                                    <img src="imgs/bd7.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="bd_info">
+                                                <h3 class="bd_info_name">
+                                                    <a href="">
+                                                        玩家国度-S5AS 枪神版游戏本            </a>
+                                                </h3>
+                                                <div class="bd_info_price">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="bd_li">
+                                        <div class="z-top">
+                                            <p class="z-top1">8</p>
+                                            <p class="z-top2">
+                                                灵耀S5100UA-轻薄笔记本-i5            </p>
+                                        </div>
+                                        <div class="z-bottom">
+                                            <span class="num1">8</span>
+                                            <div class="bd_pic">
+                                                <a href="">
+                                                    <img src="imgs/bd8.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="bd_info">
+                                                <h3 class="bd_info_name">
+                                                    <a href="">
+                                                        灵耀S5100UA-轻薄笔记本-i5            </a>
+                                                </h3>
+                                                <div class="bd_info_price">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+   	<div class="c_b">
+	<div class="content_t">
+                        <div>
+                            <h2>
+                                <span class="line"></span>
+                                键鼠、多媒体产品
+                            </h2>
+                        </div>
+                        <div class="content_t_r">
+                            <a href="">
+                                更多
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="c_bc">
+                        	<ul>
+                            	<li class="li_1">
+                                	<img src="imgs/ade92214c368321b1f50f0a731ad08c7990e0911.jpg">
+                                </li>
+                                <li>
+                                	<img src="imgs/20dc63ba2dd7de502b91a1af015e48734bcabaea.jpg" width="204px" height="204px">
+                                    <a href="">
+                                    <p class="p_1">【新品】ROG Flare 电竞游戏键盘</p>
+                                    <p class="p_2">Cheery MX RGB 轴 / 可拆卸式碗托</p>
+                                    </a>
+                                    <div class="sp">
+                                    <span>￥1299</span>
+                                    </div>
+                                </li>
+                                <li>
+                                	<img src="imgs/6be837e44182a5c1f9b3843e11e672f6f1ca83b2.jpg" width="204px" height="204px">
+                                    <a href="">
+                                    <p class="p_1">【新品】ROG Gladius大G II鼠标</p>
+                                    <p class="p_2">赠2个欧姆龙微动 / 12000dpi光学分辨率</p>
+                                    </a>
+                                    <div class="sp">
+                                    <span>￥429</span>
+                                    </div>
+                                </li>
+                                <li>
+                                	<img src="imgs/7a64947352238205a227a3951e5cc0ea29e55a04.jpg" width="204px" height="204px">
+                                    <a href="">
+                                    <p class="p_1">ROG玩家国度游戏机械键盘</p>
+                                    <p class="p_2">德国原厂CHERRY RGB轴 / 可拆分组合</p>
+                                    </a>
+                                    <div class="sp">
+                                    <span>￥1499</span>
+                                    </div>
+                                </li>
+                                <li>
+                                	<img src="imgs/ce74137e1bff509807310959a3636c49cad9bebb.jpg" width="204px" height="204px">
+                                    <a href="">
+                                    <p class="p_1">GK2000 RGB 机械电竞键盘</p>
+                                    <p class="p_2">黑色发丝纹铝合金材质 / 可调节键盘掌托</p>
+                                    </a>
+                                    <div class="sp">
+                                    <span>￥1599</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="service">
+            <div class="service-page">
+                <ul class="clearfix">
+                    <li class="qi">
+                    <img src="imgs/7days.png" width="30px" height="28px">
+                        <span>7天无理由退货</span>
+                    </li>
+                    <li class="shiwu">
+                    <img src="imgs/15days.png" width="30px" height="28px">
+                        
+                        <span>15天免费换货</span>
+                    </li>
+                    <li class="man">
+                    <img src="imgs/baoyou.png" width="30px" height="28px">
+                        
+                        <span>满69元包邮</span>
+                    </li>
+                    <li class="yuyue">
+                    <img src="imgs/weixiu.png" width="30px" height="28px">
+                        
+                        <span>预约维修服务</span>
+                    </li>
+                    <li class="last">
+                    <img src="imgs/money.png" width="30px" height="28px">
+                        
+                        <span>支持支付宝&amp;花呗分期</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="helper">
+            <div class="helper-page">
+                <div class="helper-item" style="margin-right:136.667px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">公司介绍</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">关于华硕</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕承诺</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">交易条款</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">特别提醒</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helper-item" style="margin-right:136.667px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">购物指南</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">订单说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">会员注册</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">会员账户安全与信息</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">购物流程</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">积分使用说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">优惠券使用说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">常见问题</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕商城服务协议说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">授权服务店服务说明</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helper-item" style="margin-right:136.667px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">配送与付款</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">发货与签收规范</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">配送运费说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href=""> 配送常见问题</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">配送异常</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">付款咨询</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">发票说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">发票常见问题</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">蚂蚁花呗常见问题</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helper-item" style="margin-right:0px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">服务与支持</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕服务中心查询</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕授权实体门店查询</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕智汇家</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">ZenCare</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">ZenTalk硕粉俱乐部</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">Giftbox</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="theme-footer">
+                <p style="text-align: center;">&nbsp;</p>
+                <p style="text-align: center;">有任何购物问题请联系商城客服 | 电话：400-091-9520</p>
+                <p style="text-align: center;">公司名称：华硕电脑（上海）有限公司&nbsp;|&nbsp;电话：021-31270606</p>
+                <p style="text-align: center;">地址：上海市闵行区金都路5077号</p>
+                <p style="text-align: center;">沪ICP备11025349号-3&nbsp;│ ASUSTeK Computer Inc. All Rights Reserved.</p>
+                <div style="width:230px;margin:0 auto; padding:20px 0;text-align: center;">
+                    <img src="imgs/last.png" style="text-align: center; float: left;margin-right:0px;">
+                    <p style="text-align: center; display: inline-block; text-decoration: none; height: 20px; line-height: 20px; : left; margin: 0px 0px 0px 5px; color: rgb(147, 147, 147);">
+                        <a href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">沪公网安备 31011202002313号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

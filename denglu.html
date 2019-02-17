@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <style>
+        body{
+            width:1349px;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .top{
+            width:1226px;
+            height:77px;
+            padding:23px 0 12px 0px;
+            margin:0 auto;
+        }
+        .bottom{
+            width:100%;
+            min-height: 530px;
+            background-color: #e34c6c;
+        }
+        .bottom_c{
+            width:1220px;
+            height:415px;
+            padding-top: 40px;
+            margin: 0 auto;
+        }
+        .bottom_cl{
+            float:left;
+        }
+        .bottom_cr{
+            width:370px;
+            min-height: 381px;
+            position: absolute;
+            top: 140px;
+            left: 50%;
+            float:left;
+            margin-left: 230px;
+            padding: 15px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .bottom_crc{
+            width:300px;
+            height:280px;
+            border: none;
+            padding: 0 35px;
+            margin: 0;
+        }
+        .bottom_crc_t{
+            width:300px;
+            height:44px;
+            font-size: 24px;
+            padding: 0;
+            border-bottom: none;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .bottom_crc_t h2{
+            width:300px;
+            height:44px;
+            font: 400 24px/44px "微软雅黑";
+            color: #262626;
+        }
+        .bottom_crc form{
+            width:300px;
+            height:206px;
+            position: relative;
+        }
+        .bottom_crc form ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height:206px;
+        }
+        .form-label{
+            display:none;
+        }
+        .form-item{
+            width:300px;
+            height:40px;
+            margin-bottom:10px;
+        }
+        .form-act{
+
+            width:300px;
+            position: static;
+        }
+        .form-item input{
+            padding-left: 12px;
+            padding-right: 0;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            width: 286px;
+            color: #262626;
+            border:1px solid #ccc;
+            vertical-align: middle;
+        }
+        .action-remeber{
+            width:300px;
+            height:30px;
+        }
+        .action-remeber input{
+            width:13px;
+            height:32px;
+            line-height:21px;
+            float:left;
+        }
+        .x-check{
+            float:left;
+            height:32px;
+        }
+        .form-act label{
+            float:left;
+            margin-left: 5px;
+            margin-right: 15px;
+            margin-top:7px;
+            color: #666666;
+            font-size:15px;
+        }
+        .form-item-normal{
+            width:300px;
+            height:40px;
+        }
+        .form-act button{
+            width: 300px;
+            height: 40px;
+        }
+        .btn{
+            border: 0 none;
+            padding: 0;
+        }
+        .btn-big {
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            background-color:#00a8ff;
+            cursor: pointer;
+        }
+        .btn-big span{
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+            border: none;
+        }
+        .more_link{
+            width:300px;
+            height:16px;
+            line-height: 16px;
+            text-align: center;
+            margin-top:10px;
+        }
+        .more_link a{
+            padding: 0 5px;
+            font-size: 14px;
+            margin: 0;
+            text-decoration: none;
+            color: #666666;
+        }
+        .more_link a:hover{
+            color:#00a8ff;
+        }
+        .link_signup{
+            border-right: 1px solid #666;
+            padding:0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="top">
+            <a href="华硕官网.html"><img src="imgs/huashuoshangcheng.png"/></a>
+        </div>
+        <div class="bottom">
+            <div class="bottom_c">
+                <div class="bottom_cl">
+                    <img src="imgs/denglu.jpg"/>
+                </div>
+                <div class="bottom_cr">
+                    <div class="bottom_crc">
+                        <div class="bottom_crc_t">
+                            <h2>ASUS华硕商城帐号登录</h2>
+                        </div>
+                        <form>
+                            <ul>
+                                <li class="form-item">
+                                    <label for class="form-label">登陆账号：</label>
+                                    <span class="form-act">
+                                        <input class="x-input action-account-check" type="text"
+                                        autocomplete="off" name="uname" id="dom_el_5d7e380" value=""
+                                        placeholder="用户名/邮箱地址/手机号" vtype="required"
+                                        data-caution="请填写登录帐号" autofocus="autofocus">
+                                    </span>
+                                </li>
+                                <li class="form-item">
+                                    <label for class="form-label">密码：</label>
+                                    <span class="form-act">
+                                        <input class="x-input" type="password" name="password"
+                                        id="dom_el_5d7e381" placeholder="填写密码" vtype="required"
+                                        data-caution="请填写密码" oncontextmenu="return false;" onpaste="return false;">
+                                    </span>
+                                </li>
+                                <li class="form-item action-remeber">
+                                    <label for class="form-label"></label>
+                                    <span class="form-act">
+                                        <input type="checkbox" name="is_remember" id="for_remember"
+                                        class="x-check action-remember-account" checked="checked">
+                                        <label for="for_remember" class="form-sub-label">记住帐号</label>
+                                        <input type="checkbox" name="site_autologin" id="for_auto_signin"
+                                        class="x-check action-auto-signin">
+                                        <label for="for_auto_signin" class="form-sub-label">两周内自动登录</label>
+                                    </span>
+                                </li>
+                                <li class="form-item-normal">
+                                    <div class="form-act">
+                                        <button type="submit" class="btn btn-major btn-big" rel="_request">
+                                               <span>登　录</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="form-item-normal more_link">
+                                    <a href="zhuce.html" class="link_signup">注册ASUS华硕商城账号</a>
+                                    <a href="">忘记密码？</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

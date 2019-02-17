@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>购物车（有物品）</title>
+    <link rel="stylesheet" href="购物车2.css" />
+</head>
+<body>
+<div class="head_top">
+    <div class="tc">
+        <div class="head_top_l">
+            <a href="../服务网点查询/服务网点查询.html" class="link">服务网点查询</a>
+            <a href="../驱动下载/驱动下载.html" class="link">驱动下载</a>
+            <a href="../驱动下载/驱动下载.html" class="link">华硕智汇家</a>
+            <a href="../ZenCare/ZenCare.html" class="link">ZenCare</a>
+        </div>
+        <div class="head_top_r">
+            <ul class="head_top_r_ul">
+                <li class="dlzc">
+                    <a href="../denglu.html">登陆</a>
+                    |
+                    <a href="../zhuce.html">注册</a>
+                </li>
+                <li><a href="../消息/消息.html">消息</a></li>
+                <li><a href="../我的订单/我的订单.html">我的订单</a></li>
+                <li class="lastli"><a href="购物车.html">
+                    <i ></i>
+                    购物车
+                    <span>(</span>
+                    <b>0</b>
+                    <span>)</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head_huashuo">
+        <div class="huashuo_content">
+            <a href="../华硕官网.html"><img src="imgs/logo.png"/></a>
+            <div class="huashuo_nav">
+                <a href="">618提前约惠，新品直降900</a>
+                <a href="">店主主推新品PX554家用本</a>
+                <a href="">以旧换新送立体头戴式耳机</a>
+            </div>
+            <div class="huashuo_r">
+                <div class="huashuo_r_t">
+                    <input type="text"  placeholder="ASUS华硕商城"class="huashuo_input"/>
+                    <a href="" class="ininput_l">新飞行堡垒5代上市</a>
+                    <a href="" class="ininput_r">顽石5代</a>
+                    <button>
+                        <span class="huashuo_icon"></span>
+                    </button>
+                </div>
+                <div class="huashuo_r_b">
+                    <a href="">游戏本</a>
+                    <a href="">轻薄本</a>
+                    <a href="">限时特惠</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="center">
+		<div class="c_c">
+        	<div class="c_1">
+            	<ul class="clearfix">
+                	<li class="cart-input">
+                    	<div class="checkbox-div" onclick="showAll()">
+						</div>
+                        <div class="check-on" onclick="hideAll()">
+                        </div>
+                        <div class="checkbox">全选</div>
+                        </li>
+                    </li>
+                    <li class="goods">商品</li>
+                    <li>销售价</li>
+                    <li>数量</li>
+                    <li>优惠价格</li>
+                    <li>积分</li>
+                    <li>小计</li>
+                    <li class="caozuo">操作</li>
+                </ul>
+            </div>
+            <div id="div1" class="c_2">
+				<div class="c_2c">
+				<div class="c_2t">
+					<ul class="clearfix2">
+                	<li class="cart-input">
+                    	<div class="checkbox-div" onclick="showDj(1)">
+						</div>
+                        <div class="check-on" onclick="hideDj(1)">
+                        </div>
+                        <div class="checkbox"></div>
+                    </li>
+                    <li class="goods">
+						<div class="p-pic">
+						<a href=""><img src="imgs2/16c7e0270114985d5164c70b6aed8b71852b6e96.jpg" width="100" height="100"/></a>
+						</div>
+						<div class="p-title">
+							<a href="../shangpingxiangqingye.html">
+							【新品 / 全新升级8代CPU】U4100UN-灵耀窄边框轻薄笔记本（Windows10home/i7-8550U/MX150 2G/8G/512G SSD/IPS 指纹识别/纳米压印光刻技术)-尊爵蓝
+							</a>
+						</div>
+					</li>
+                    <li>￥7499</li>
+                    <li class="cart-num">
+						<div class="p-quantity">
+							<a href="javascript:void(0)" onclick="numDelete(1)">-</a><input type="text" class="inp" name="inp" value="1" /><a href="javascript:void(0)" onclick="numAdd(1)">+</a>
+						</div>
+                        <p class="goods-num">还可购买<i class="goods-number">4</i>件</p>
+					</li>
+                    <li>￥0</li>
+                        <li><span class="jifen">7499</span></li>
+                        <li>￥<span class="xiaoji">7499</span></li>
+                    <li class="caozuo">
+						<a class="btn-delete" href="javascript:void(0);" onclick="showDelete1()">x</a>
+					</li>
+                </ul>
+				</div>
+				<div class="c_2b">
+					<div class="gift">
+						<div class="p-gift">
+							<b>[赠品]</b>
+							华硕有线鼠标AE-01商品颜色：黑色 
+							<i>￥99 x 1</i>
+						</div>
+						<div class="p-gift">
+							<b>[赠品]</b>
+							华硕外滩公文包/笔记本包/电脑包/黑/420D涤纶-14英寸
+							<i>￥169 x 1</i>
+						</div>
+					</div>
+				</div>
+				</div>
+            </div>
+
+            <div id="tishi1">
+                <div class="tishi1">
+                    <p>此商品的最小购买数量为1件</p>
+                    <i onclick="hideTishi1()">X</i>
+                    <button class="queding" onclick="hideTishi1()">确定</button>
+                </div>
+                <div class="cart-mask">
+                </div>
+            </div>
+            <div id="tishi2">
+                <div class="tishi2">
+                    <p>此商品最多只能购买5件</p>
+                    <i onclick="hideTishi2()">X</i>
+                    <button class="queding" onclick="hideTishi2()">确定</button>
+                </div>
+                <div class="cart-mask">
+                </div>
+            </div>
+
+            <div id="div2" class="c_2">
+                <div class="c_2c">
+                    <div class="c_2t">
+                        <ul class="clearfix2">
+                            <li class="cart-input">
+                                <div class="checkbox-div" onclick="showDj(2)">
+                                </div>
+                                <div class="check-on" onclick="hideDj(2)">
+                                </div>
+                                <div class="checkbox"></div>
+                            </li>
+                            <li class="goods">
+                                <div class="p-pic">
+                                    <a href=""><img src="imgs2/16c7e0270114985d5164c70b6aed8b71852b6e96.jpg" width="100" height="100"/></a>
+                                </div>
+                                <div class="p-title">
+                                    <a href="../shangpingxiangqingye.html">
+                                        【新品 / 全新升级8代CPU】U4100UN-灵耀窄边框轻薄笔记本（Windows10home/i7-8550U/MX150 2G/8G/512G SSD/IPS 指纹识别/纳米压印光刻技术)-尊爵蓝
+                                    </a>
+                                </div>
+                            </li>
+                            <li>￥7499</li>
+                            <li class="cart-num">
+                                <div class="p-quantity">
+                                    <a href="javascript:void(0);" onclick="numDelete(2)">-</a><input class="inp" type="text" name="inp" value="1" /><a href="javascript:void(0);" onclick="numAdd(2)">+</a>
+                                </div>
+                                <p class="goods-num">还可购买<i class="goods-number">4</i>件</p>
+                            </li>
+                            <li>￥0</li>
+                            <li><span class="jifen">7499</span></li>
+                            <li>￥<span class="xiaoji">7499</span></li>
+                            <li class="caozuo">
+                                <a class="btn-delete" href="javascript:void(0);" onclick="showDelete2()">x</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c_2b">
+                        <div class="gift">
+                            <div class="p-gift">
+                                <b>[赠品]</b>
+                                华硕有线鼠标AE-01商品颜色：黑色
+                                <i>￥99 x 1</i>
+                            </div>
+                            <div class="p-gift">
+                                <b>[赠品]</b>
+                                华硕外滩公文包/笔记本包/电脑包/黑/420D涤纶-14英寸
+                                <i>￥169 x 1</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_4">
+				<a href="">继续购物</a>
+				<p class="order-choose">
+				共
+				<span class="allNum">2</span>
+				件商品，已选择
+				<span class="chooseNum">0</span>
+				件
+				</p>
+				<button type="submit"><span>去结算</span></button>
+				<div class="total-price">
+				<span>合计</span>
+				<b>￥<p class="allPrice">0</p></b>
+			</div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="service">
+            <div class="service-page">
+                <ul>
+                    <li class="qi">
+                        <img src="imgs/7days.png" width="30px" height="28px">
+                        <span>7天无理由退货</span>
+                    </li>
+                    <li class="shiwu">
+                        <img src="imgs/15days.png" width="30px" height="28px">
+
+                        <span>15天免费换货</span>
+                    </li>
+                    <li class="man">
+                        <img src="imgs/baoyou.png" width="30px" height="28px">
+
+                        <span>满69元包邮</span>
+                    </li>
+                    <li class="yuyue">
+                        <img src="imgs/weixiu.png" width="30px" height="28px">
+
+                        <span>预约维修服务</span>
+                    </li>
+                    <li class="last">
+                        <img src="imgs/money.png" width="30px" height="28px">
+
+                        <span>支持支付宝&amp;花呗分期</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="helper">
+            <div class="helper-page">
+                <div class="helper-item" style="margin-right:136.667px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">公司介绍</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">关于华硕</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕承诺</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">交易条款</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">特别提醒</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helper-item" style="margin-right:136.667px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">购物指南</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">订单说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">会员注册</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">会员账户安全与信息</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">购物流程</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">积分使用说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">优惠券使用说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">常见问题</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕商城服务协议说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">授权服务店服务说明</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helper-item" style="margin-right:136.667px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">配送与付款</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">发货与签收规范</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">配送运费说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href=""> 配送常见问题</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">配送异常</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">付款咨询</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">发票说明</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">发票常见问题</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">蚂蚁花呗常见问题</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helper-item" style="margin-right:0px;">
+                    <ul class="helper-ul">
+                        <li class="first">
+                            <a href="">服务与支持</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕服务中心查询</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕授权实体门店查询</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">华硕智汇家</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">ZenCare</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">ZenTalk硕粉俱乐部</a>
+                        </li>
+                        <li class="helper-content">
+                            <a href="">Giftbox</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="theme-footer">
+                <p style="text-align: center;">&nbsp;</p>
+                <p style="text-align: center;">有任何购物问题请联系商城客服 | 电话：400-091-9520</p>
+                <p style="text-align: center;">公司名称：华硕电脑（上海）有限公司&nbsp;|&nbsp;电话：021-31270606</p>
+                <p style="text-align: center;">地址：上海市闵行区金都路5077号</p>
+                <p style="text-align: center;">沪ICP备11025349号-3&nbsp;│ ASUSTeK Computer Inc. All Rights Reserved.</p>
+                <div style="width:230px;margin:0 auto; padding:20px 0;text-align: center;">
+                    <img src="imgs/last.png" style="text-align: center; float: left;margin-right:0px;">
+                    <p style="text-align: center; display: inline-block; text-decoration: none; height: 20px; line-height: 20px; : left; margin: 0px 0px 0px 5px; color: rgb(147, 147, 147);">
+                        <a href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">沪公网安备 31011202002313号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="delete-div1">
+        <div class="delete">
+            <p>确定要删除？</p>
+            <i onclick="hideDelete1()">X</i>
+            <button class="queding" onclick="deleteDiv1()">确定</button>
+            <button class="quxiao" onclick="hideDelete1()">取消</button>
+        </div>
+        <div class="cart-mask">
+        </div>
+    </div>
+        <div id="delete-div2">
+            <div class="delete">
+                <p>确定要删除？</p>
+                <i onclick="hideDelete2()">X</i>
+                <button class="queding" onclick="deleteDiv2()">确定</button>
+                <button class="quxiao" onclick="hideDelete2()">取消</button>
+            </div>
+            <div class="cart-mask">
+            </div>
+        </div>
+
+
+	<script type="text/javascript" src="购物车2.js"></script>
+</body>

@@ -1,0 +1,3060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spxqy</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            family:"微软雅黑";
+        }
+        .bigimg{
+            width:400px;
+            height:300px;
+            position: absolute;
+            left:510px;
+            top:0px;
+            border: 1px solid #ccc;
+            z-index: 10000;
+            overflow: hidden;
+            background-color: #fff;
+            display:none;
+        }
+        .pic{
+            position: absolute;
+        }
+        ul li{
+            list-style: none;
+        }
+        .product-page{
+            width:1349px;
+            height:100%;
+            background-color: #fff;
+        }
+        .header{
+            width:100%;
+            background-color: #fff;
+            padding-bottom:20px;
+        }
+        .head_top{
+            width:100%;
+            height:40px;
+            background-color:#404040;
+        }
+        .head_top_l{
+            float:left;
+            height:40px;
+            width:370px;
+            line-height:40px;
+            margin-left:70px;
+
+        }
+        .head_top_l .link{
+            font-size:14px;
+            color:#b2b2b2;
+            margin:0 10px;
+            text-decoration: none;
+        }
+        .head_top_r{
+            float:left;
+            width:430px;
+            height:40px;
+            line-height:40px;
+            margin-left:440px;
+
+        }
+        .head_top_r_ul li{
+            list-style:none;
+            float:left;
+            margin:0 15px;
+            font-size:14px;
+        }
+        .dlzc{
+            color:#b2b2b2;
+        }
+        .head_top_r_ul li a:hover{
+            color:#fff;
+        }
+        .head_top_r_ul .lastli a:hover{
+            color:#b2b2b2;
+        }
+        .head_top_r_ul li a{
+            color:#b2b2b2;
+            text-decoration: none;
+        }
+        .head_huashuo{
+            clear:both;
+            width:100%;
+            height:100px;
+        }
+        .huashuo_content{
+            width:100%;
+            padding-top:33px;
+        }
+        .huashuo_content img{
+            float:left;
+            width:150px;
+            height:60px;
+            margin-left:60px;
+        }
+        .huashuo_nav{
+            float:left;
+            display:inline-block;
+            width:620px;
+            height:40px;
+            margin:10px 0px 10px 66px;
+        }
+        .huashuo_nav a{
+            float:left;
+            display:inline-block;
+            width:180px;
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+            margin-right:20px;
+        }
+        .huashuo_r{
+            float:left;
+            position: relative;
+
+        }
+
+        .huashuo_input{
+            width:305px;
+            height:40px;
+            float:left;
+        }
+        .ininput_l{
+            position: absolute;
+            top:12px;
+            left:95px;
+            z-index: 1;
+            width:105px;
+            height:22px;
+            text-decoration: none;
+        }
+        .ininput_r{
+            position: absolute;
+            top:12px;
+            left:230px;
+            z-index: 1;
+            width:50px;
+            height:22px;
+            text-decoration: none;
+        }
+        .huashuo_r_t a{
+            float: left;
+            padding: 0 10px;
+            background-color: #d9d9d9;
+            border-radius: 5px;
+            margin: 0 4px;
+            height: 22px;
+            line-height: 22px;
+            color: #353535;
+            font-size: 12px;
+        }
+        .huashuo_r_t button{
+            width:40px;
+            height:42px;
+            border: 1px solid #a29e9f;
+            background-color: #fff;
+            vertical-align: top;
+            box-sizing: content-box;
+            display:inline-block;
+            float:left;
+            border-left:none;
+        }
+        .liji:hover{
+            cursor:pointer;
+            background-color:#0092de;
+        }
+        .huashuo_r_t button span{
+            background:url(imgs/icon.jpg)no-repeat center;
+            display:block;
+            width:18px;
+            height:20px;
+            margin:0 auto;
+        }
+        .huashuo_r_b{
+            float:left;
+            margin-top:5px;
+            width:374px;
+            height:22px;
+        }
+        .huashuo_r_b a{
+            font-size: 14px;
+            line-height: 22px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #666666;
+        }
+        .center{
+            width:1349px;
+        }
+        .center-page{
+            width: 1226px;
+            margin: 0 auto;
+        }
+        .center-top{
+            font-size: 14px;
+            color: #666;
+            line-height: 30px;
+            margin-bottom: 29px;
+            margin-top: 17px;
+        }
+        .center-top a{
+            color: #666;
+            text-decoration: none;
+        }
+        .center-top a:hover{
+            color: #00a8ff;
+        }
+        .center-section{
+            width:1349px;
+        }
+
+        .footer{
+            width:100%;
+            height:660px;
+       }
+        .footer li{
+            list-style:none;
+        }
+
+        .service{
+            width:1349px;
+            height:44px;
+            padding-top:18px;
+            border-bottom:1px solid #ccc;
+            text-align:center;
+            background-color: #fafafa;
+
+        }
+
+        .service-page{
+            width:1226px;
+            height:28px;
+            margin:0 auto;
+        }
+        .service-page li{
+            float:left;
+            width: 235px;
+            height: 28px;
+            font-size: 14px;
+            border-right: 1px solid #ccc;
+            position:relative;
+            padding-left:9px;
+        }
+        .service img{
+            position:absolute;
+            left:60px;
+        }
+        .service span{
+            position:absolute;
+            left:93px;
+            top:6px;
+            color:#666;
+        }
+        .service-page .last{
+            border-right: none;
+        }
+        .helper{
+            width:1349px;
+            height:255px;
+            padding-top:60px;
+            padding-bottom:80px;
+            background-color: #fafafa;
+        }
+        .helper-page{
+            width:1226px;
+            height:225px;
+            margin:0 auto;
+        }
+        .helper-item{
+            width:204px;
+            float: left;
+        }
+        .helper-ul{
+            list-style: none;
+        }
+        .helper-ul li a{
+            text-decoration: none;
+        }
+        .helper-ul .first{
+            line-height: 24px;
+            margin-bottom:15px;
+        }
+        .helper-ul .first a{
+            font-size: 16px;
+            color: #2d2d2d;
+        }
+        .helper-content{
+            line-height: 24px;
+        }
+        .helper-content a{
+            color: #666666;
+            font-size: 14px;
+        }
+        .helper-content a:hover{
+            color: #00a8ff;
+        }
+        .footer-info{
+            width:1349px;
+            height:182px;
+            background-color: #fff;
+            padding-top: 20px;
+        }
+        .theme-footer{
+            width:1349px;
+            height:172px;
+            text-align: center;
+            line-height: 1.8;
+            margin-top: 10px;
+            font-size:12px;
+        }
+        .theme-footer a{
+            color: #666666;
+            font-size: 14px;
+        }
+        .theme-footer a:hover{
+            color: #00a8ff;
+        }
+        .miancontent{
+            width:1349px;
+        }
+        .page{
+            width: 1226px;
+            height:1213px;
+            margin: 0 auto;
+        }
+        .product-bg{
+            width:100%;
+            background-color: #f2f2f2;
+            padding-bottom: 55px;
+        }
+        .product-container{
+            width:1226px;
+            height:877px;
+        }
+        .product-container form{
+            width:1226px;
+            height:877px;
+            display:block;
+        }
+        .product-l{
+            width:500px;
+            height:877px;
+            float: left;
+        }
+        .product-lt{
+            width:500px;
+            height:606px;
+        }
+        .product-lt-t{
+            width:500px;
+            height:500px;
+            border: none;
+            position: relative;
+        }
+        .product-pic{
+            width: 500px;
+            height: 500px;
+            line-height: 448px;
+
+        }
+        #imgsrc{
+            position:relative;
+            border:1px solid #000;
+        }
+        .album-handle{
+            width:333px;
+            height:249px;
+            display:none;
+            position: absolute;
+            overflow: hidden;
+            background-color: #b3d5ff;
+            opacity: .5;
+            filter: alpha(opacity=50);
+            line-height: 1;
+        }
+
+        .product-pic img{
+            width:500px;
+            height:500px;
+        }
+        .loading{
+            position: absolute;
+            text-align: center;
+            z-index: 2;
+            background-color: #fff;
+            opacity: .7;
+            filter: alpha(opacity=70);
+            padding: 5px;
+            line-height: 1;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+            display:none;
+        }
+        .product-lt-b{
+            width:500px;
+            height:96px;
+            margin-top: 10px;
+            position: relative;
+            clear: left;
+        }
+        .flip-l{
+            width:50px;
+            height:100px;
+            line-height: 100px;
+            margin-top: 0;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .icon-left{
+            display:block;
+            color: #ccc;
+            width:28px;
+            height:30px;
+            cursor: default;
+            font-size: 18px;
+            margin:0 auto;
+            margin-top:35px;
+            background:url("imgs/left.png") no-repeat;
+            background-size:contain;
+        }
+        .thumbnail-list{
+            width:400px;
+            height:91px;
+            padding-top:5px;
+            margin:0 auto;
+            overflow:hidden;
+            position: relative;
+        }
+        .thumbnail-list li{
+            width:92px;
+            height:90px;
+            margin: 0 4px;
+            float: left;
+            padding: 0;
+        }
+        .clearfix1{
+            width:600px;
+            height:100%;
+            list-style:none;
+            position:absolute;
+        }
+        .flip-r{
+            width: 50px;
+            height: 100px;
+            line-height: 100px;
+            margin-top: 0;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .icon-right{
+            display:block;
+            color: #ccc;
+            cursor: default;
+            font-size: 18px;
+            width:28px;
+            height:30px;
+            margin:0 auto;
+            margin-top:35px;
+            background:url("imgs/right2.png") no-repeat;
+            background-size:contain;
+        }
+        .product-ln{
+            width:500px;
+            height:24px;
+            text-align: right;
+            font-size: 14px;
+            color: #262626;
+            margin-top: 15px;
+            clear:both;
+            padding-left:145px;
+        }
+        .pop-wrapper{
+            margin-left:20px;
+            height: 24px;
+            line-height: 24px;
+            float:left;
+            margin:0 auto;
+        }
+        .pop-wrapper a{
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .jiathis{
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .btn{
+            border: none;
+            width: 100px;
+            background-color: #fff;
+            line-height: 24px;
+            color: #262626;
+        }
+        .text{
+            padding-bottom:5px;
+        }
+        .product-lb{
+            width:480px;
+            height:87px;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            padding-left: 20px;
+            background-color: #f7f7f7;
+        }
+        .rate{
+            width:480px;
+            height:82px;
+            color: #02A8FD;
+            font-size: 58px;
+            padding-top: 5px;
+        }
+        .rate i{
+            font-size: 38px;
+            font-style: normal;
+            padding-left:0px;
+        }
+        .rate .gmhmy{
+            font-size: 18px;
+            color: #808080;
+            margin-left: 15px;
+        }
+
+        .product-r{
+            width:706px;
+            height:877px;
+            float: left;
+            margin-left:20px;
+        }
+        .product-titles{
+            width:706px;
+            height:170px;
+            padding-bottom: 10px;
+            line-height: 1.8;
+            text-align: left;
+        }
+         .product-titles h2 {
+             width:706px;
+             height:108px;
+             font-size: 24px;
+             color: #262626;
+             line-height: 36px;
+             font-weight: normal;
+         }
+        .product-titles p{
+            width:706px;
+            height:64px;
+            font-size: 18px;
+            color: #f00;
+        }
+        .product_information{
+            width:706px;
+            height:730px;
+        }
+        .promotion_head{
+            width:670px;
+            height:30px;
+            padding:0 15px;
+            line-height: 30px;
+            background-color: #d52151;
+            color: #fff;
+        }
+        .f1{
+            width:99px;
+            height:30px;
+            line-height:30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .time_bg{
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            background: url(imgs/time_bg.png) no-repeat;
+            margin-top: 5px;
+            margin-right: 6px;
+            vertical-align: top;
+        }
+        .price_promotion_wrap{
+            width:676px;
+            height:196px;
+            background-color: #f7f7f7;
+            padding: 15px 15px;
+        }
+        .product-concerns{
+            width:676px;
+            height:81px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .product-concerns ul{
+            width:676px;
+            height:81px;
+            list-style: none;
+            padding:0px;
+            margin:0px;
+        }
+        .product-concerns ul li{
+            width:676px;
+            height:36px;
+        }
+        .product-concerns ul li span{
+            float:left;
+        }
+        .concern1{
+            font-size: 18px;
+            color: #262626;
+            white-space: nowrap;
+        }
+        .concern2{
+            color: red;
+            font-size: 30px;
+            line-height: 0.9;
+        }
+        .concern3{
+            color: #518eb4;
+            margin-left: 24px;
+            cursor: pointer;
+            line-height:2.2;
+        }
+        .concern4{
+            margin-left:365px;
+            color: #262626;
+            line-height: 18px;
+            font-size: 14px;
+        }
+        .concern4 i{
+            font-size: 18px;
+            color: #d52151;
+            line-height: 18px;
+            font-style: normal;
+        }
+        .concern5{
+            font-size: 18px;
+            color: #262626;
+            white-space: nowrap;
+        }
+        .concern6{
+            font-size: 18px;
+            color: #ff0000;
+            padding-left: 4px;
+            margin-left:20px;
+        }
+        .activity-tips {
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background-color: #fff;
+            padding: 10px;
+            max-width: 60%;
+            border: 1px solid #ccc;
+            color: #999;
+        }
+        .hide {
+            display: none !important;
+        }
+        .activity-tips i{
+            width: 0;
+            height: 0;
+            border: 5px dashed transparent;
+            border-bottom-color: #fff;
+            position: absolute;
+            left: 5px;
+            top: -9px;
+            font-style: normal;
+        }
+        .promotion_wrap .clearfix{
+            width:676px;
+            height:72px;
+        }
+        .label{
+            float:left;
+            width:90px;
+            height:36px;
+            font-size: 18px;
+            color: #262626;
+            white-space: nowrap;
+        }
+        .detail{
+            float:left;
+            width:500px;
+            height:72px;
+            font-size: 14px;
+        }
+        .promotion-first{
+            width:500px;
+            height:36px;
+        }
+        .promotion-tag{
+            width:32px;
+            height:20px;
+            float: left;
+            line-height: 20px;
+            background-color: #fe0100;
+            color: #fff;
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 7px;
+            margin-right: 14px;
+        }
+        .promotion-info{
+            float: left;
+            width: 64%;
+        }
+        .promotion-info .new_gift_item {
+            width:80px;
+            height:26px;
+            padding-top: 3px;
+            float: left;
+            margin-right: 15px;
+        }
+        .promotion-info .new_gift_item .checkbox_box {
+            margin-top: 4px;
+        }
+        .checkbox_box{
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            border: 1px solid #c9c9c9;
+            float: left;
+            border-radius: 5px;
+            position: relative;
+        }
+        .checkbox_box.on {
+            background-color: #00a8ff;
+            border-color: #00a8ff;
+        }
+        .checkbox_box.on i {
+            display: block;
+            width:17px;
+            height:17px;
+            background: url("imgs/duigou.png") no-repeat;
+            background-size:contain;
+        }
+        .checkbox_box i {
+            font-weight: 100;
+        }
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+        }
+        .checkbox_box input {
+            opacity: 0;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .promotion-info .gift_label {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #cbcbcb;
+            float: left;
+            cursor: pointer;
+            margin-left: 5px;
+            position: relative;
+        }
+        .promotion-info .gift_label img {
+            width: 24px;
+            height: 24px;
+        }
+        .promotion-info .gift_label p {
+            position: absolute;
+            top: 25px;
+            margin-left: -75px;
+            color: #606060;
+            border: 1px solid #404040;
+            width: 200px;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: center;
+            background-color: #fff;
+            display: none;
+            z-index: 2;
+        }
+        .product-main .price_promotion_wrap .label-alert {
+            border-radius: 5px;
+            background-color: #f00;
+        }
+        .label-alert {
+            width:32px;
+            height:20px;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: #d80808;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 1.33333;
+            color: #fff;
+
+        }
+        em, i {
+            font-style: normal;
+        }
+        .promotion-list{
+            width:500px;
+            height:36px;
+            line-height:36px;
+        }
+        .product-spec{
+            width:705px;
+            height:80px;
+        }
+        .spec-area{
+            width:705px;
+            height:80px;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .spec-item {
+            width:705px;
+            height:74px;
+            margin-bottom: 6px;
+            overflow: hidden;
+        }
+        .product-buy{
+            width:670px;
+            height:371px;
+            background-color: #fff;
+            border: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .item-label{
+            width:108px;
+            font-size: 18px;
+            color: rgb(38, 38, 38);
+            white-space: nowrap;
+            text-align: right;
+        }
+        .item-content{
+            width:705px;
+            height:39px;
+            float:left;
+            margin-top:5px;
+        }
+        .spec-item .spec-attr.selected {
+            width:239px;
+            height:33px;
+            opacity: 1;
+            border:1px solid rgb(0, 168, 255);
+            border-image: initial;
+        }
+        .spec-item .spec-attr {
+            text-align: center;
+            height: 33px;
+            line-height: 33px;
+            cursor: pointer;
+            border-radius: 5px;
+            overflow: hidden;
+            float: left;
+            background-color: rgb(246, 246, 246);
+            margin-right: 6px;
+            margin-bottom: 4px;
+            border:1px solid rgb(204, 204, 204);
+            border-image: initial;
+        }
+        .spec-item .spec-attr a {
+            line-height: 33px;
+            display: block;
+            height: 33px;
+            color: #111;
+            padding: 0 16px;
+            background-color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .spec-item {
+            margin-bottom: 6px;
+            overflow: hidden;
+        }
+        .product-action{
+            width:706px;
+            height:284px;
+        }
+        .product-action ul{
+            width:706px;
+            height:284px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .product-buy-quantity{
+            width:706px;
+            height:74px;
+            margin-bottom: 20px;
+        }
+        .p-quantity{
+            width:134px;
+            height:38px;
+            overflow: hidden;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .p-quantity a {
+            float:left;
+            width: 35px;
+            height: 36px;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            border: 1px solid #a9a9a9;
+            text-align: center;
+            font: 18px/36px simsun,serif;
+            text-decoration: none;
+        }
+        .btn-decrease {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: #b3b3b3;
+            background-color: #fff;
+        }
+        .btn-decrease:hover{
+            background-color:#00a8ff;
+            color:#fff;
+        }
+        .p-quantity input {
+            width:60px;
+            height: 36px;
+            line-height: 36px;
+            padding: 0;
+            margin: 0;
+            float:left;
+            vertical-align: middle;
+            border-width: 1px 0;
+            border-style: solid;
+            border-color: #a9a9a9;
+            text-align: center;
+        }
+        .btn-increase{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #b3b3b3;
+            background-color: #fff;
+        }
+        .btn-increase:hover{
+            background-color:#00a8ff;
+            color:#fff;
+        }
+        .service-support{
+             width:706px;
+             height:50px;
+         }
+        .service-support ul{
+            width:706px;
+            height:50px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .service-support li {
+            width:706px;
+            height:20px;
+            margin-bottom: 10px;
+        }
+        .label1 {
+                float: left;
+                font-size: 14px;
+                width: 72px;
+                height: 20px;
+                line-height: 20px;
+                color: #262626;
+                white-space: nowrap;
+            }
+         .detail1 {
+            margin-left: 0;
+            height:20px;
+            line-height: 20px;
+            overflow: hidden;
+            float: left;
+            font-size: 14px;
+        }
+        .detail1 span {
+            margin-right: 18px;
+        }
+        .detail1 span img{
+            float:left;
+            width:20px;
+            height:20px;
+            line-height:20px;
+        }
+        .detail1 span.support{
+            float:left;
+            height:20px;
+            line-height:15px;
+        }
+        a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .product-buy-action{
+            width:706px;
+            height:40px;
+            margin-top:100px;
+            margin-bottom:120px;
+        }
+        button {
+            margin: 0;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        .action-buynow{
+            width:238px;
+            height:40px;
+            line-height: 40px;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            color:#fff;
+            margin-right: 15px;
+            padding: 0;
+            background-color: #00a8ff;
+        }
+        .action-addtocart{
+            width: 238px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 18px;
+            border: 1px solid #00a8ff;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            color: #00a8ff;
+        }
+        .action-addtocart:hover{
+            background:#fff;
+        }
+        .product-jiagou{
+            width:1226px;
+            height:326px;
+            margin-top:10px;
+            margin-bottom:10px;
+            border: none;
+        }
+        .mod-title {
+            width:1226px;
+            height: 32px;
+            background: #fff;
+        }
+        .mod-title h2 {
+            font-size: 18px;
+            height: 18px;
+            line-height: 20px;
+            font-weight: normal;
+            padding-left: 7px;
+            border-left: 2px solid #00a8ff;
+            margin-right: 20px;
+        }
+        .content{
+            width:430px;
+            height:122px;
+            padding:20px 5px;
+        }
+        .content-l{
+            width:132px;
+            height:122px;
+            float:left;
+            margin-left:10px;
+        }
+
+        .content-r{
+            width:266px;
+            height:122px;
+            float:left;
+            margin-left:10px;
+        }
+        .content-rt{
+            width:264px;
+            height:33px;
+            padding:10px 1px ;
+        }
+        .xianshi{
+            font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .yincan{
+            font-size: 14px;
+            display:none;
+        }
+        .content-rb{
+            width:264px;
+            height:72px;
+            padding:1px ;
+        }
+        .content-rb ul{
+            width:264px;
+            height:25px;
+            position:relative;
+        }
+       select{
+            width:86px;
+            height:23px;
+            line-height: 25px;
+            vertical-align: middle;
+            border-width: 1px;
+            border-color: #ccc;
+            float:left;
+        }
+        option {
+            font-weight: normal;
+            display: block;
+            white-space: pre;
+            min-height: 1.2em;
+            padding: 0px 2px 1px;
+        }
+        .acount{
+            margin-left:5px;
+            width:80px;
+            height:25px;
+            float:left;
+        }
+        .acount a{
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 18px;
+            color: #747474;
+            display: inline-block;
+            border-radius: 0px;;
+            border: 1px solid #a9a9a9;
+            text-align: center;
+            font: 14px/22px simsun,serif;
+        }
+        .acount input{
+            height: 22px;
+            width: 22px;
+            line-height:22;
+            padding: 0;
+            margin: 0;
+            border-width: 1px 0;
+            border-style: solid;
+            border-color: #a9a9a9;
+            text-align: center;
+            display: inline-block;
+            font: 14px/22px simsun,serif;
+        }
+        #price{
+            margin-right:5px;
+            float:right;
+            font-size: 16px;
+            color: #f00;
+        }
+        .price{
+            margin-right:5px;
+            float:right;
+            font-size: 16px;
+            color: #f00;
+        }
+        .content-b{
+            clear:both;
+            width:1224px;
+            height:126px;
+            padding:1px;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+        }
+        .content-b{
+            width:1214px;
+            height:57px;
+            padding:5px;
+        }
+        .content-b ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .content-b ul li{
+            float:right;
+            line-height: 55px;
+        }
+        .content-bt-li2{
+            font-size: 18px;
+            color: #262626;
+            margin-right:30px;
+        }
+        .content-bt-li2 span{
+            font-weight: bold;
+        }
+        .content-bt-li1{
+            font-size: 30px;
+            color: #f00;
+        }
+        .content-bt-li1 i{
+            font-style: normal;
+            font-size: 24px;
+            color: #262626;
+        }
+        .content-bb{
+            clear:both;
+            width:1214px;
+            height:48px;
+            margin-top:20px;
+        }
+        .content-bb-j {
+            width: 230px;
+            height: 48px;
+            border-radius: 5px;
+            background-color: #00a8ff;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            float:right;
+        }
+        .content-bb-j:hover{
+            background-color: #00a8ff;
+        }
+        .product-bg{
+            width:1349px;
+            background-color: #f2f2f2;
+            padding-bottom: 55px;
+        }
+        .product-tags{
+            width:1349px;
+            height:61px;
+            padding-bottom:10px;
+            margin-bottom:20px;
+            background-color: #fff;
+        }
+        .product-spxq{
+            width:1226px;
+            display:block;
+        }
+        .product-tags-info{
+            width:1226px;
+            height:60px;
+            border-bottom: 1px solid #ccc;
+            margin: 0 auto;
+        }
+        .tags-hd {
+            font-size: 18px;
+            height: 30px;
+            line-height: 30px;
+            padding: 15px 0;
+            border: none;
+            margin-right: 0;
+            border-bottom: 0px solid #ccc;
+            position: relative;
+            background-color: #fff;
+            float: left;
+        }
+        #t1{
+            border-bottom: 1px solid rgb(0, 168, 243);
+        }
+        .page1{
+            width:1226px;
+            margin:0 auto;
+        }
+        .product-section{
+            width:1226px;
+        }
+        .tags-hd a {
+            color: #666;
+            font-size: 18px;
+            padding: 2px 30px;
+             font-weight: normal;
+        }
+
+        .imgli1 {
+            border-bottom: 1px solid #00a8ff;
+        }
+        #active a {
+            color: #00a8ff;
+        }
+        .product-pl{
+            width:1226px;
+            margin:0 auto;
+        }
+        .product-pl-info{
+            width:1186px;
+            height:222px;
+            padding:20px;
+            margin-bottom:30px;
+            background-color: #fff;
+            border: none;
+        }
+        .product-xxcs{
+            width:1229px;
+            height:2449px;
+            background: #fff;
+            padding: 40px 0;
+            display:none;
+        }
+        .product-xxcs table{
+            width:1225px;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+        .product-xxcs tr {
+            width:1225px;
+            height:51px;
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+        .product-xxcs .section-hd {
+            width:1209px;
+            height:50px;
+            background-color: #f2f2f2;
+            height: 50px;
+            padding: 0;
+            padding-left: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        th {
+            font-weight: bold;
+        }
+        .product-xxcs .item-ttl {
+            text-align: center;
+            color: #242424;
+            padding-left: 0;
+            font-weight: 700;
+            width: 16%;
+            white-space: nowrap;
+        }
+        .product-xxcs td {
+            height: 50px;
+            line-height: 50px;
+            padding: 0;
+            padding-left: 30px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+        .product-thsm{
+            width:1194px;
+            background-color: #fff;
+            padding: 16px;
+            display:none;
+        }
+        .thsm-mod{
+            margin-bottom: 10px;
+        }
+        .product-shfw{
+            width:1194px;
+            background-color: #fff;
+            padding: 16px;
+            display:none;
+        }
+        .shfw-mod{
+            margin-bottom: 10px;
+        }
+
+        .tp{
+            float:left;
+        }
+        .wz{
+            float:left;
+            width:920px;
+            height:200px;
+            margin-left:30px;
+            padding:10px 15px;
+            font-size: 16px;
+            border: 1px solid #fff;
+        }
+        .wz li{
+            float:left;
+            width: 33.3%;
+            min-height: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .all-part{
+            width:100%;
+            height:100%;
+            display:none;
+        }
+        .jrgwc{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 550px;
+            height: 280px;
+            margin-left: -275px;
+            margin-top: -140px;
+            box-shadow: none;
+            background-color:#fff;
+            z-index:2001;
+            display:none;
+
+        }
+        .zxk{
+            width:548px;
+            height:225px;
+            border: 1px solid #e6e6e6;
+            border-bottom: none;
+        }
+        .top{
+            position:relative;
+            width:528px;
+            height:35px;
+            padding:0 10px;
+        }
+        .bottom2{
+            width:528px;
+            height:180px;
+            padding:0 10px 10px 10px;
+            text-align: center;
+            line-height: 2;
+        }
+        .t{
+            width:528px;
+            height:74px;
+            padding-left:20px;
+
+        }
+        .t span{
+            font-size: 36px;
+            color: #262626;
+        }
+        .z{
+            width:528px;
+            height:48px;
+            font-size: 18px;
+            color: #808080;
+            margin-bottom:20px;
+        }
+        .z em{
+            font-size: 24px;
+            color: #00a8ff;
+            font-style: normal;
+            padding:0 5px;
+        }
+        .z i{
+            font-size: 24px;
+            color: #00a8ff;
+            font-style: normal;
+        }
+        .b{
+            width:528px;
+            height:38px;
+        }
+        .b button{
+            width: 120px;
+            height: 36px;
+            border: 1px solid #00a8ff;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 8px;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+
+        }
+        .b button span{
+            display:inline-block;
+            width: 120px;
+            height: 36px;
+            line-height: 36px;
+            background-color:#fff;
+            color: #00a8ff;
+        }
+        .btn2{
+            width: 120px;
+            height: 36px;
+            border: 1px solid #00a8ff;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 8px;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: middle;
+            color: #fff;
+            background-color: #00a8ff;
+            text-decoration: none;
+        }
+        .btn2:hover{
+            background-color:#0092de;
+        }
+        .btn2 span {
+            display: block;
+            border: none;
+            height: 36px;
+            line-height: 36px;
+            padding: 0;
+        }
+
+        .cart-mask{
+            width:100%;
+            height:100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0,0,0,.3);
+            z-index:2000;
+
+        }
+        .imgs1{
+            display:inline-block;
+            width:15px;
+            height:15px;
+            background:url("imgs/分享.png") no-repeat;
+            background-size:contain;
+        }
+        .imgs2{
+            display:inline-block;
+            width:15px;
+            height:15px;
+            background:url("imgs/信封.png") no-repeat;
+            background-size:contain;
+        }
+        .imgs3{
+            display:inline-block;
+            width:15px;
+            height:15px;
+            background:url("imgs/爱心.png") no-repeat;
+            background-size:contain;
+        }
+        .imgs4{
+            display:inline-block;
+            width:15px;
+            height:15px;
+            background:url("imgs/erweima.png") no-repeat;
+            background-size:contain;
+        }
+        .pop-body{
+            display:none;
+            width:316px;
+            height:315px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 1px 1px 1px rgba(151,151,151,0.5);
+            position: absolute;
+            left:270px;
+            top: 538px;
+            text-align: left;
+            z-index: 10;
+        }
+        .pop-body h2{
+            font-style: normal;
+            font-weight:normal;
+            font-size: 20px;
+        }
+        .pop-title h3{
+            font-size: 12px;
+            padding: 5px 0 0 10px;
+            display: inline-block;
+        }
+        .close{
+            display: inline-block;
+            width: 25px;
+            height:25px;
+            float:right;
+        }
+        .close a{
+            display: block;
+            width: 25px;
+            height:25px;
+            background:url("imgs/删除.png") no-repeat;
+            background-size:contain;
+        }
+        .pop-content{
+            padding: 10px;
+        }
+        .form-item {
+            overflow: hidden;
+            padding-bottom: 6px;
+        }
+        .form-item textarea{
+            border-width: 1px;
+            border-color: #ccc;
+            padding: 1px;
+            display: inline-block;
+            margin-left:3px;
+        }
+        .text1::-webkit-input-placeholder{
+            color:#999;
+        }
+        .form-item .text1{
+            width:200px;
+            height:58px;
+        }
+        .form-item .text2{
+            width:200px;
+            height:115px;
+        }
+        .form-label{
+            white-space: nowrap;
+            text-align: right;
+            float: left;
+            width: 5.2em;
+            line-height: 2.1em;
+            min-height: 1em;
+        }
+        .form-item button{
+            background: #00a8ff;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 80px;
+            line-height: 24px;
+            color: #fff;
+            border:none;
+            margin-left:85px;
+        }
+        #xtips1{
+            display:none;
+            background-color: #fff;
+            width: 133px;
+            height:47.2px;
+            border: 3px solid #00a8ff;
+            position: absolute;
+            left:300px;
+            top:1190px;
+        }
+        #xtips2{
+            display:none;
+            background-color: #fff;
+            width: 133px;
+            height:47.2px;
+            border: 3px solid #00a8ff;
+            position: absolute;
+            left:300px;
+            top:1190px;
+        }
+        .zx,.zd{
+            width:98px;
+            height:35.2px;
+            padding: 6px 10px 6px 25px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div id="xtips1">
+    <img width="15" height="15" src="imgs/警告.png" style="float:left;margin-top:6px;margin-left:6px;">
+    <div class="zx">
+        此商品的最小购买数量为1件
+    </div>
+</div>
+<div id="xtips2">
+    <img width="15" height="15" src="imgs/警告.png" style="float:left;margin-top:6px;margin-left:6px;">
+    <div class="zd">
+        此商品的最大购买数量为5件
+    </div>
+</div>
+    <div class="product-page">
+        <div class="header">
+            <div class="head_top">
+                <div class="head_top_l">
+                    <a href="" class="link">服务网点查询</a>
+                    <a href="" class="link">驱动下载</a>
+                    <a href="" class="link">华硕智汇家</a>
+                    <a href="" class="link">ZenCare</a>
+                </div>
+                <div class="head_top_r">
+                    <ul class="head_top_r_ul">
+                        <li class="dlzc">
+                            <a href="">登陆</a>
+                            |
+                            <a href="">注册</a>
+                        </li>
+                        <li><a href="">消息</a></li>
+                        <li><a href="">我的订单</a></li>
+                        <li class="lastli"><a href="">
+                            <i ></i>
+                            购物车
+                            <span>(</span>
+                            <b>0</b>
+                            <span>)</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head_huashuo">
+                <div class="huashuo_content">
+                    <img src="imgs/huashuoshangcheng.png"/>
+                    <div class="huashuo_nav">
+                        <a href="">618提前约惠，新品直降900</a>
+                        <a href="">店主主推新品PX554家用本</a>
+                        <a href="">以旧换新送立体头戴式耳机</a>
+                    </div>
+                    <div class="huashuo_r">
+                        <div class="huashuo_r_t">
+                            <input type="text"  placeholder="ASUS华硕商城"class="huashuo_input"/>
+                            <a href="" class="ininput_l">新飞行堡垒5代上市</a>
+                            <a href="" class="ininput_r">顽石5代</a>
+                            <button>
+                                <span class="huashuo_icon"></span>
+                            </button>
+                        </div>
+                        <div class="huashuo_r_b">
+                            <a href="">游戏本</a>
+                            <a href="">轻薄本</a>
+                            <a href="">限时特惠</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center-page">
+                <div class="center-top">
+                    <span><a href="">首页</a></span>
+                    <span>></span>
+                    <span><a href="">笔记本电脑</a></span>
+                    <span>></span>
+                    <span><a href="">商用笔记本</a></span>
+                    <span>></span>
+                    <span><a href="">稳定便携P系列</a></span>
+                </div>
+            </div>
+            <div class="center-section">
+                <div class="section-main">
+                    <div class="clearfix">
+                        <div class="miancontent">
+                            <div class="page">
+                                <div class="product-container">
+                                    <form>
+                                        <div class="product-l">
+                                            <div class="product-lt">
+                                                <div class="product-lt-t">
+                                                    <div class="product-pic" onmouseover="mouseOver()" onmouseout="mouseOut()" onmousemove="mouseMove()">
+                                                        <a href="">
+                                                            <img id="imgsrc" src="imgs/thumbnail11.jpg"/>
+                                                            <div class="album-handle">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="bigimg">
+                                                        <img class="pic" src="imgs/thumbnail11.jpg" />
+                                                    </div>
+                                                    <img class="loading" src="imgs/loading.gif"
+                                                         alt="正在加载大图..." style="display:none;">
+                                                    <div class="loading" style="visibility: hidden;">
+                                                        <img alt="loading..." src="loading.gif">
+                                                        正在加载大图...
+                                                    </div>
+                                                </div>
+                                                <div class="product-lt-b">
+                                                    <div class="flip-l" onclick="jr()">
+                                                        <a href="javascript:void(0);" class="icon-left"></a>
+                                                    </div>
+                                                    <div class="thumbnail-list" style="width:400px;">
+                                                        <ul class="clearfix1" style="width: 600px;">
+                                                            <li id="active" class="imgli1">
+                                                                <div class="thumbnail" >
+                                                                    <a href="javascript:void(0)">
+                                                                        <img onmouseover="imgHover(1)" src="imgs/thumbnail1.jpg" alt="" width="88" height="88">
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="imgli">
+                                                                <div class="thumbnail">
+                                                                    <a href="javascript:void(0)">
+                                                                        <img onmouseover="imgHover(2)" src="imgs/thumbnail2.jpg" alt="" width="88" height="88">
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="imgli">
+                                                                <div class="thumbnail">
+                                                                    <a href="javascript:void(0)">
+                                                                        <img onmouseover="imgHover(3)" src="imgs/thumbnail3.jpg" alt="" width="88" height="88">
+                                                                    </a>
+                                                                </div>
+                                                            <li class="imgli">
+                                                                <div class="thumbnail">
+                                                                    <a href="javascript:void(0)">
+                                                                        <img onmouseover="imgHover(4)" src="imgs/thumbnail4.jpg" alt="" width="88" height="88">
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="imgli">
+                                                                <div class="thumbnail">
+                                                                    <a href="javascript:void(0)">
+                                                                        <img onmouseover="imgHover(5)" src="imgs/thumbnail5.jpg" alt="" width="88" height="88">
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+
+                                                    <div class="flip-r " onclick="jl()">
+                                                        <a href="javascript:void(0);" class="icon-right"></a>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    var imgsrc=document.getElementById("imgsrc");
+                                                    var imgli=document.querySelectorAll(".clearfix1 li");
+                                                    var ah=document.getElementsByClassName("album-handle")[0];
+                                                    var bm=document.getElementsByClassName("bigimg")[0];
+                                                    var pic=document.getElementsByClassName("pic")[0];
+
+                                                    function imgHover(id){
+                                                        imgsrc.src="imgs/thumbnail1"+id+".jpg";
+                                                        pic.src="imgs/thumbnail1"+id+".jpg";
+                                                        for(var i=0;i<=imgli.length;i++) {
+
+                                                            if(i==id) {
+                                                                imgli[i-1].style.borderBottom = "1px solid #00a8ff";
+                                                            }
+                                                            imgli[i].style.borderBottom ="none";
+                                                        }
+
+                                                    }
+
+                                                    var cf=document.getElementsByClassName("clearfix1")[0];
+                                                    var ir=document.getElementsByClassName("icon-right")[0];
+                                                    var il=document.getElementsByClassName("icon-left")[0];
+                                                    function jl(){
+                                                        cf.style.left="-92px";
+                                                        ir.style.background="url('imgs/right.png')";
+                                                        il.style.background="url('imgs/left2.png')";
+                                                    }
+                                                    function jr(){
+                                                        cf.style.left="0px";
+                                                        ir.style.background="url('imgs/right2.png')";
+                                                        il.style.background="url('imgs/left.png')";
+                                                    }
+
+                                                    function mouseOver(){
+                                                        ah.style.display="block";
+                                                        bm.style.display="block";
+                                                    }
+                                                    function mouseOut(){
+                                                        ah.style.display="none";
+                                                        bm.style.display="none";
+                                                    }
+                                                    var box=document.getElementsByClassName("page")[0];
+                                                    var small=document.getElementsByClassName("product-pic")[0];
+                                                    function mouseMove(){
+                                                        var marginL=box.offsetLeft;
+                                                        var marginT=box.offsetTop;
+                                                        var currentX=event.clientX-event.;
+                                                        var currentY=event.clientY;
+                                                        var x=currentX- marginL-ah.offsetWidth/2;
+                                                        var y=currentY-marginT-ah.offsetHeight/2;
+                                                        if(x<0){
+                                                            x=0;
+                                                        }
+                                                        if(x>small.offsetWidth-ah.offsetWidth){
+                                                            x=small.offsetWidth-ah.offsetWidth;
+                                                        }
+                                                        if(y<0){
+                                                            y=0;
+                                                        }
+                                                        if(y>small.offsetHeight-ah.offsetHeight){
+                                                            y=small.offsetHeight-ah.offsetHeight;
+                                                        }
+                                                        ah.style.left=x+"px";
+                                                        ah.style.top=y+"px";
+                                                        var relX=ah.offsetLeft;
+                                                        var relY=ah.offsetTop;
+                                                        pic.style.left="-"+relX*2.3+"px";
+                                                        pic.style.top="-"+relY*2+"px";
+                                                    }
+
+                                                </script>
+                                            </div>
+                                            <div class="product-ln">
+                                                <span class="share pop-wrapper">
+                                                    <div class="jiathis_style">
+                                                        <a href="" class="jiathis">
+
+                                                                <div class="imgs1"></div>
+
+                                                            分享
+                                                        </a>
+                                                    </div>
+                                                </span>
+                                                <span class="recommend pop-wrapper" onmouseover="dJ2()" onmouseout="xX2()">
+                                                    <button type="button" class="btn">
+                                                        <span>
+                                                            <span>
+                                                                <div class="imgs2"></div>
+
+                                                                <i class="text">推荐</i>
+                                                                <i class="icon arrow">
+                                                                    <img src="imgs/向上.png" width="15px" height="15px">
+                                                                </i>
+                                                            </span>
+                                                        </span>
+                                                    </button>
+                                                </span>
+
+                                                    <a href="" class="btn btn-rounded btn-addfav">
+                                                        <span class="shc pop-wrapper">
+
+                                                                <div class="imgs3"></div>
+
+                                                        <i class="text">收藏商品</i>
+                                                        </span>
+                                                    </a>
+
+                                                <span class="pop-wrapper action-scanbuy">
+                                                    <button type="button" class="btn" style="display:block;">
+
+                                                            <div class="imgs4"></div>
+
+                                                        手机购买
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <div class="product-lb">
+                                                <div class="rate">
+                                                    88<i>%</i><span class="gmhmy">购买后满意</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-r">
+                                            <div class="product-titles">
+                                                <h2>
+                                                    【618开门红】【新品上市】PX554UB-主流家用办公笔记本
+                                                    （Windows 10 home/i5-8250U/MX110/4G*2内存/256G<br />&nbsp;SSD)
+                                                </h2>
+                                                <p>
+                                                    【618开门红】6/1-6/7号活动期间，每日10点开抢168神券，
+                                                    花呗付款享3期免息，首页领券最高减118元，更多精彩详情请点击商城首页~
+                                                </p>
+                                            </div>
+                                            <div class="product_information">
+                                                <div class="promotion_head">
+                                                    <div class="f1">
+                                                        <i class="time_bg"></i>限时抢购
+                                                    </div>
+                                                </div>
+                                                <div class="price_promotion_wrap">
+                                                    <div class="product-concerns">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="concern1">限时抢购</span>
+                                                                <span class="concern2">￥4299 </span>
+                                                                <span class="concern3">活动规则</span>
+                                                                <span class="concern4">已售<br/><i>138</i>台</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="concern5">商城价</span>
+                                                                <span class="concern6">￥5199</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="activity-tips hide">
+                                                        <i class="tri"></i>
+                                                        【PX554】限时抢购  直降900  先到先得 售完为止
+                                                    </div>
+                                                    <div class="promotion_wrap clearfix">
+                                                        <div class="label">优惠信息</div>
+                                                        <ul class="detail">
+                                                            <li class="promotion-first">
+                                                                <div class="promotion-tag">赠品</div>
+                                                                <div class="promotion-info">
+                                                                    <div class="new_gift_item ">
+                                                                        <div class="checkbox_box  on">
+                                                                            <i class="iconfont icon-duihao "></i>
+                                                                            <input type="radio" name="rule_id" value="139" checked="checked">
+                                                                        </div>
+                                                                        <label class="checkbox_box_label gift_label  useless" id="la1" onmouseover="showHide()" onmouseout="hideHide()">
+                                                                            <img src="imgs/gwb.jpg" width="24px" height="24px">
+                                                                            <p id="p1" onmouseover="iMouseOver()" onmouseout="iMouseOut()">【618开门红】华硕外滩公文包/笔记本包/电脑包/黑/420D涤纶</p>
+                                                                        </label>
+                                                                        <label class="checkbox_box_label gift_label  useless" id="la2" onmouseover="show()" onmouseout="hide()">
+                                                                            <img src="imgs/yx.jpg" width="24" height="24">
+                                                                            <p id="p2" onmouseover="iOver()" onmouseout="iOut()">【618开门红】华硕有线鼠标AE-01</p>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="promotion-list">
+                                                                <em class="label-alert">包邮</em>
+                                                                <span>订单总金额满69元包邮</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                     function $(did) {
+                                                         return document.getElementById(did);
+                                                     }
+                                                    var p1=$("p1");
+                                                    var p2=$("p2");
+                                                    var la1=$("la1");
+                                                    var la2=$("la2");
+                                                    var timer=null;
+                                                    function showHide(){
+                                                         p1.style.display="block";
+                                                        p2.style.display="none";
+                                                         clearTimeout(timer);
+                                                     }
+                                                     function hideHide(){
+                                                         timer=setTimeout(function(){
+                                                             p1.style.display="none";
+                                                         },1);
+                                                     }
+                                                     function iMouseOver(){
+                                                         p1.style.display="block";
+                                                         clearInterval(timer);
+                                                     }
+                                                     function iMouseOut(){
+                                                         p1.style.display="none";
+                                                     }
+                                                     function show(){
+                                                         p1.style.display="none";
+                                                         p2.style.display="block";
+                                                         clearTimeout(timer);
+                                                     }
+                                                     function hide(){
+                                                         timer=setTimeout(function(){
+                                                             p2.style.display="none";
+                                                         },1);
+                                                     }
+                                                     function iOver(){
+                                                         p2.style.display="block";
+                                                         clearInterval(timer);
+                                                     }
+                                                     function iOut(){
+                                                         p2.style.display="none";
+                                                     }
+                                                </script>
+                                                <div class="product-buy">
+                                                    <div class="product-spec">
+                                                        <ul class="spec-area">
+                                                            <li class="spec-item">
+                                                                <span class="item-label">配置：</span>
+                                                                <span class="item-content">
+	                                                                <ul class="clearfix">
+                                                                        <li class="spec-attr  selected " id="li1" onclick="pP()">
+                                                                            <a href="javascript:void(0);">
+                                                                                <span>i5-8250U/MX110/4G*2/256G</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="spec-attr " id="li2" onclick="fF()">
+                                                                            <a href="javascript:void(0);">
+                                                                                <span>i5-8250U/MX110/4G/128G</span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+      	                                                        </span>
+                                                            </li>
+                                                            <li class="spec-item">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <script>
+                                                        function $(did) {
+                                                            return document.getElementById(did);
+                                                        }
+                                                        var li1=$("li1");
+                                                        var li2=$("li2");
+                                                        function pP(){
+                                                            li1.style.borderColor=" #00a8ff";
+                                                            li2.style.borderColor=" #ccc";
+                                                        }
+                                                        function fF(){
+                                                            li2.style.borderColor=" #00a8ff";
+                                                            li1.style.borderColor=" #ccc";
+                                                        }
+                                                    </script>
+                                                    <div class="product-action">
+                                                        <ul>
+                                                            <li class="product-buy-quantity">
+                                                                <span class="item-label">规格：</span>
+                                                                <span class="item-content">
+                                                                    <span class="p-quantity">
+                                                                        <a href="javascript:void(0);" class="btn-decrease disabled" id="jian" onclick="jIan()">-</a>
+                                                                        <input type="text" class="action-quantity-input" value="1" min="1" max="12" id="zhi" >
+                                                                        <a href="javascript:void(0);" class="btn-increase" id="jia" onclick="jIa()">+</a>
+                                                                    </span>
+                                                                    <span class="p-store hide"></span>
+                                                                    <input type="hidden" value="12"></span>
+                                                            </li>
+                                                            <script>
+                                                                function $(did) {
+                                                                    return document.getElementById(did);
+                                                                }
+                                                                var jiaN=$("jian");
+                                                                var jiA=$("jia");
+                                                                var zhI=$("zhi");
+                                                                    function jIan(){
+                                                                        if(zhI.value>1){
+                                                                            zhI.value=parseInt(zhI.value)-1;
+                                                                        }
+                                                                    }
+                                                                    function jIa(){
+                                                                            zhI.value=parseInt(zhI.value)+1;
+                                                                    }
+                                                            </script>
+                                                            <li class="service-support">
+                                                                <ul>
+                                                                    <li class="clearfix">
+                                                                        <div class="label1">服　　务：</div>
+                                                                        <div class="detail1">
+                                                                            <span>
+                                                                                <i class="iconfont icon-zhifubao">
+                                                                                    <img src="imgs/支付宝.png"/>
+                                                                                </i>
+                                                                                <span class="support">支付宝</span>
+                                                                            </span>
+                                                                            <span>
+                                                                                <i class="iconfont icon-huabei">
+                                                                                    <img src="imgs/花呗分期.png"/>
+                                                                                </i>
+                                                                                <span class="support">花呗分期</span>
+                                                                            </span>
+                                                                            <span>
+                                                                                <i class="iconfont icon-weixin">
+                                                                                    <img src="imgs/微信支付.png"/>
+                                                                                </i>
+                                                                                <span class="support">微信支付</span>
+                                                                            </span>
+                                                                            <span>
+                                                                                <i class="iconfont icon-credit">
+                                                                                    <img src="imgs/银联.png"/>
+                                                                                </i>
+                                                                                <span class="support">银联支付</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="clearfix">
+                                                                        <div class="label1">支　　持：</div>
+                                                                        <div class="detail1">
+                                                                            <a href="">以旧换新，闲置笔记本回收</a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="label1" style="width:84px;">配送及发票：</div>
+                                                                        <div class="detail1">部分商品将由华硕授权店为消费者提供商品，且提供就近配送服务并开具发票</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="product-buy-action">
+                                                                <button type="button" class="liji btn btn-import btn-huge action-buynow">
+                                                                    <span>
+                                                                        <span>立即购买</span>
+                                                                    </span>
+                                                                </button>
+                                                                <button type="button" class="btn action-addtocart iconfont icon-cart2" onclick="dJ()">
+                                                                    <span>
+                                                                        <span>加入购物车</span>
+                                                                    </span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="all-part" id="all-part">
+                                                            <div class="jrgwc" id="all">
+                                                                <div class="zxk">
+                                                                    <div class="top">
+                                                                        <a href="javasript:void()"><img style="position:absolute;bottom:0px;left:504px;width:28px;height:28px;" src="imgs/X.png"  onclick="xX()"/></a>
+                                                                    </div>
+                                                                    <div class="bottom2">
+                                                                        <div class="t">
+                                                                            <div style="width:39px;height:39px;float:left;position:absolute;left:130px;top:56px;">
+                                                                                <img style="width:100%;height:100%;" src="imgs/对.png"/>
+                                                                            </div>
+                                                                            <span>加入购物车成功</span>
+                                                                        </div>
+                                                                        <p class="z">
+                                                                            目前选购商品共<em>2</em>种<em>2</em>件。合计<i class="price">￥30093</i>
+                                                                        </p>
+                                                                        <div class="b">
+                                                                            <button type="button" id="btn1" onmouseover="bR()" onmouseout="bC()" onclick="bJ()"><span ><span id="jxgw">继续购物</span></span>
+                                                                            </button>
+                                                                            <a href="购物车/购物车2.html" class="btn2"><span><span >进入购物车</span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cart-mask"></div>
+                                                        </div>
+                                                        <div class="pop-body" onmouseover="popHover()" onmouseout="popOut()">
+                                                            <div class="pop-title">
+                                                                <h3>将商品推荐给好友</h3>
+                                                                <div class="close" onclick="bJ()">
+                                                                    <a href="javascript:void(0)"></a>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="pop-content">
+                                                                    <li class="form-item">
+                                                                        <span class="form-label">发件人：</span><h2>XXX</h2>
+                                                                    </li>
+
+                                                                    <li class="form-item">
+                                                                        <span class="form-label">收件人：</span>
+                                                                        <textarea class="text1" placeholder="填写多个地址请用逗号“,”隔开。"></textarea>
+                                                                    </li>
+
+                                                                    <li class="form-item">
+                                                                        <span class="form-label">内容：</span>
+                                                                        <textarea class="text2"></textarea>
+                                                                    </li>
+
+                                                                    <li class="form-item">
+                                                                        <button type="button">发送</button>
+                                                                    </li>
+
+                                                                </ul>
+                                                        </div>
+                                                        <script>
+                                                            function $(did){
+                                                                return document.getElementById(did);
+                                                            }
+                                                            var allp=$("all-part");
+                                                            var all=$("all");
+                                                            var jxgw=$("jxgw");
+                                                            var pop=document.getElementsByClassName("pop-body")[0];
+
+                                                            function dJ(){
+                                                                all.style.display="block";
+                                                                allp.style.display="block";
+
+                                                            }
+                                                            function dJ2() {
+                                                                pop.style.display = "block";
+                                                            }
+                                                            function popHover(){
+                                                               pop.style.display = "block";
+
+                                                            }
+                                                            function popOut(){
+                                                                pop.style.display = "none";
+                                                            }
+                                                            function xX(){
+                                                                all.style.display="none";
+                                                                allp.style.display="none";
+                                                            }
+                                                            function xX2(){
+
+                                                                    pop.style.display = "none";
+
+                                                            }
+                                                            function bR(){
+                                                                jxgw.style.color="#fff";
+                                                                jxgw.style.backgroundColor="#00a8ff";
+                                                            }
+                                                            function bC(){
+                                                                jxgw.style.color="#00a8ff";
+                                                                jxgw.style.backgroundColor="#fff";
+                                                            }
+                                                            function bJ(){
+                                                                all.style.display="none";
+                                                                allp.style.display="none";
+                                                               pop.style.display="none";
+                                                            }
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="product-jiagou">
+                                    <div class="mod-title">
+                                        <h2>加购商品</h2>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-l">
+                                            <img src="imgs/apc.jpg" width="120px" height="120px"/>
+                                        </div>
+                                        <div class="content-r">
+                                            <div class="content-rt">
+                                                <div class="xianshi">【618提前购】延长至三年整机保修-适用于商用笔记本系列 </div>
+                                                <!--<div class="yincan">【618提前购】延长至三年整机保修-适用于商用笔记本系列 </div>-->
+                                            </div>
+                                            <div class="content-rb">
+                                                <ul id="ul1" style="float:left;margin-top:20px;">
+                                                    <li class="xuanze">
+                                                        <select id="test" onchange="bX(test)">
+                                                            <option value="1" id="op1">&nbsp;请选择&nbsp;</option>
+                                                            <option value="2" id="op2">延长至三年整机保修-适用灵耀3/U/S系列</option>
+                                                        </select>
+                                                    </li>
+                                                    <li class="acount">
+                                                        <a href="javascript:void(0);" class="btn-decrease" id="bd" onclick="bD()">-</a><input class="action-quantity-input" type="text" value="0" id="inp"/><a href="javascript:void(0);" class="btn-increase" id="bi" onclick="bI()">+</a>
+                                                    </li>
+                                                    <li class="price">
+                                                        <span id="pr">￥0</span>
+                                                    </li>
+                                                </ul>
+                                                <ul style="float:left;">
+                                                    <li id="jg1" style="position: absolute;top:0px;display:none;"><span>￥0</span></li>
+                                                    <li id="jg2" style="position: absolute;top:0px;display:none;"><span>￥366</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="content-b">
+                                        <div class="content-bt">
+                                            <ul>
+                                                <li class="content-bt-li1"><i>总价:</i> ￥<h1 style="display:inline-block;font-size:30px;" class="allprice">4299</h1></li>
+                                                <li class="content-bt-li2">
+                                                    已 选 择:<span>0</span>件配件
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-bb">
+                                            <button type="button" class="content-bb-j" style="" onclick="dJi()">
+                                                <i class="iconfont icon-cart2"></i>加入购物车
+                                            </button>
+                                        </div>
+                                        <div class="all-part" id="all-part1">
+                                            <div class="jrgwc" id="all1">
+                                                <div class="zxk">
+                                                    <div class="top">
+                                                        <img style="position:absolute;bottom:0px;left:504px;width:28px;height:28px;" src="imgs/X.png"  onclick="xXi()"/>
+                                                    </div>
+                                                    <div class="bottom2">
+                                                        <div class="t">
+                                                            <div style="width:39px;height:39px;float:left;position:absolute;left:130px;top:56px;">
+                                                                <img style="width:100%;height:100%;" src="imgs/对.png"/>
+                                                            </div>
+                                                            <span>加入购物车成功</span>
+                                                        </div>
+                                                        <p class="z">
+                                                            目前选购商品共<em>2</em>种<em>2</em>件。合计<i class="price">￥30093</i>
+                                                        </p>
+                                                        <div class="b">
+                                                            <button type="button"  onmouseover="bRi()" onmouseout="bCi()" onclick="bJi()"><span ><span id="jxgw1">继续购物</span></span>
+                                                            </button>
+                                                            <a href="购物车/购物车2.html" class="btn2"><span><span >进入购物车</span></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-mask"></div>
+                                        </div>
+                                        <script>
+                                            function $(did){
+                                                return document.getElementById(did);
+                                            }
+                                            var op1=$("op1");
+                                            var op2=$("op2");
+                                            var pr=$("pr");
+                                            var jg1=$("jg1");
+                                            var jg2=$("jg2");
+                                            var ul1=$("ul1");
+                                            function bX(test){
+                                                ul1.style.top="0px";
+                                                pr.style.display="none";
+                                                // test.options[test.selectedIndex]
+                                                if(test.options[test.selectedIndex].value==1){
+                                                    jg2.style.display="none";
+                                                    jg1.style.display="block";
+                                                }else{
+                                                    jg1.style.display="none";
+                                                    jg2.style.display="block";
+                                                }
+                                            }
+                                            var bd=$("bd");
+                                            var bi=$("bi");
+                                            var inp=$("inp");
+                                            var zx=$("xtips1");
+                                            var zd=$("xtips2");
+                                            var timer=null;
+                                            var zj=document.getElementsByClassName("allprice")[0];
+                                            function bD(){
+                                                zd.style.display="none";
+                                                inp.value=parseInt(inp.value)-1;
+                                                zj.innerHTML=parseInt(zj.innerHTML)-366;
+                                                if(inp.value<0){
+                                                    inp.style.color="#fff";
+                                                    zx.style.display="block";
+                                                    timer=setTimeout(function(){
+                                                        zx.style.display="none";
+                                                    },2000);
+                                                    zj.innerHTML=4299;
+                                                }
+
+                                            }
+                                            function bI(){
+                                                zx.style.display="none";
+                                                if(inp.value<0){
+                                                    inp.value="0";
+                                                    inp.value=parseInt(inp.value)+1;
+
+                                                    inp.style.color="black";
+                                                    zj.innerHTML=4299;
+                                                }else{
+                                                    inp.value=parseInt(inp.value)+1;
+
+                                                    if(inp.value>5){
+                                                        inp.value="5";
+                                                        zd.style.display="block";
+                                                        timer=setTimeout(function(){
+                                                            zd.style.display="none";
+                                                        },2000);
+                                                        zj.innerHTML=4299+5*366;
+                                                    }
+                                                }
+                                                zj.innerHTML = 4299+ 366 * parseInt(inp.value);
+                                            }
+                                        </script>
+
+                                        <script>
+                                            function $(did){
+                                                return document.getElementById(did);
+                                            }
+                                            var all1=$("all1");
+                                            var allp1=$("all-part1");
+                                            var jxgw1=$("jxgw1")
+                                            function dJi(){
+                                                all1.style.display="block";
+                                                allp1.style.display="block";
+
+                                            }
+                                            function xXi(){
+                                                all1.style.display="none";
+                                                allp1.style.display="none";
+                                            }
+                                            function bRi(){
+                                                jxgw.style.color="#fff";
+                                                jxgw.style.backgroundColor="#00a8ff";
+                                            }
+                                            function bCi(){
+                                                jxgw.style.color="#00a8ff";
+                                                jxgw.style.backgroundColor="#fff";
+                                            }
+                                            function bJi(){
+                                                all1.style.display="none";
+                                                allp1.style.display="none";
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-bg">
+                                <div class="product-tags">
+                                    <div class="product-tags-info">
+                                        <h2 class="tags-hd tags-detail active" id="t1" onclick="xQ()">
+                                            <a href="javaScript:void(0);">商品详情</a>
+                                        </h2>
+                                        <h2 class="tags-hd tab-parameters " id="t2">
+                                            <a href="javaScript:void(0);" onclick="cS()">详细参数</a>
+                                        </h2>
+                                        <h2 class="tags-hd tag-comment " id="t3" onclick="pL()">
+                                            <a href="javaScript:void(0);">商品评论(24)</a></h2>
+                                        <h2 class="tags-hd " onclick="sM()" id="t4">
+                                            <a href="javaScript:void(0);">退换货说明</a>
+                                        </h2>
+                                        <h2 class="tags-hd " onclick="fW()" id="t5">
+                                            <a href="javaScript:void(0);">售后服务</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="page1">
+                                    <div class="product-section">
+                                        <div class="product-spxq" id="spxq">
+                                            <div class="product-pl">
+                                                <div class="product-pl-info">
+                                                    <div class="info-jx">
+                                                        <div class="tp">
+                                                            <img src="imgs/page.jpg"/>
+                                                        </div>
+                                                        <ul class="wz">
+                                                            <li>品牌：ASUS</li>
+                                                            <li>所属分类：稳定便携P系列</li>
+                                                            <li>操作系统：Windows 10 Home</li>
+                                                            <li>键盘背光：否</li>
+                                                            <li>CPU型号：i5-8250U</li>
+                                                            <li>显示核心：GeForce  MX110</li>
+                                                            <li>显存容量：2GB</li>
+                                                            <li>内存：4GB*2</li>
+                                                            <li>硬盘容量：256GB</li>
+                                                            <li>屏幕尺寸：15.6英寸</li>
+                                                            <li>屏幕分辨率：HD 1366X768</li>
+                                                            <li>屏幕类型：雾面屏</li>
+                                                            <li>有无光驱：无光驱</li>
+                                                            <li>商品编号：G5B039676BA04C</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="alltp" style="width:1226px;margin:0 auto;">
+                                                <p style="width:100%;height:18px;background-color:#fff;"></p>
+                                                <img src="imgs/p1.jpg"/>
+                                                <img src="imgs/p2.jpg"/>
+                                                <img src="imgs/p3.jpg"/>
+                                                <img src="imgs/p4.jpg"/>
+                                                <img src="imgs/p5.jpg"/>
+                                            </div>
+                                        </div>
+                                        <div class="product-xxcs" id="xxcs">
+                                            <table>
+                                                <tbody>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">主要信息</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">商品型号</td>
+                                                    <td>PX554UB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">操作系统</td>
+                                                    <td>Windows 10 home</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">商品颜色</td>
+                                                    <td>银色</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">处理器</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">CPU型号</td>
+                                                    <td>英特尔® 酷睿™ i5-8250U</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">CPU速度</td>
+                                                    <td>1.6GHz，单核最高主频可达3.4GHz</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">内存</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">内存容量</td>
+                                                    <td>板载4GB+插槽4GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">内存类型</td>
+                                                    <td>支持DDR4 2400 MHz </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">插槽数量</td>
+                                                    <td>1 x SO DIMM slot</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">最大支持容量</td>
+                                                    <td>系统内存最大可扩展至20GB (支持单根4GB\8GB\16GB) </td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">硬盘</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">硬盘容量</td>
+                                                    <td>256G SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">接口类型</td>
+                                                    <td>"2.5英寸 7mmSATA3 HDD； 1*M.2 Type 2280 SATA 接口"</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">显卡</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">独立显示核心</td>
+                                                    <td>Nvidia GeForce MX110</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">集成显示核心</td>
+                                                    <td>Intel® UHD Graphics 620</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">显存容量</td>
+                                                    <td>2GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">显存类型</td>
+                                                    <td>GDDR5</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">显示屏</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">屏幕尺寸</td>
+                                                    <td>15.6英寸</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">屏幕分辨率</td>
+                                                    <td>HD 1366x768</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">屏幕类型</td>
+                                                    <td>LED背光防眩光雾面屏</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">是否触控</td>
+                                                    <td>不支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">光驱</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">光驱类型</td>
+                                                    <td>无</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">通信</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">蓝牙类型</td>
+                                                    <td>Bluetooth 4.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">无线网络</td>
+                                                    <td>802.11ac </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">局域网</td>
+                                                    <td>内建10/100/1000Mbps以太网络模块</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">接口</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">接口</td>
+                                                    <td>"1x电源接口； 1xVGA； 1x网线接口； 1xHDMI； 3xUSB3.0；"1xUSB2.0； 1x耳机/麦克风共享接口； 光驱； 安全锁孔；1xSD接口</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">音效系统</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">扬声器</td>
+                                                    <td>2个高品质扬声器</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">内置麦克风</td>
+                                                    <td>有</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">摄像头</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">摄像头类型</td>
+                                                    <td>VGA网络摄像头</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">其他信息</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">颜色</td>
+                                                    <td>银色</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">电池</td>
+                                                    <td>4芯电池组：44WHrs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">电源瓦数</td>
+                                                    <td>65W</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">重量</td>
+                                                    <td>约2.1kg</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">尺寸</td>
+                                                    <td>约380 x 256 x 23.3~26.3mm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2" class="section-hd">包装信息</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-ttl">包装信息</td>
+                                                    <td>用户手册、保修卡、中国能效标识说明书</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="product-sppl" id="sppl">
+
+                                        </div>
+                                        <div class="product-thsm" id="thsm">
+                                            <div class="thsm-mod">
+                                                <div>
+                                                    <div class="WordSection1">
+                                                        <p class="MsoNormal" align="left">华硕商城承诺符合以下条件：</p>
+                                                        <p class="MsoNormal" align="left">由产品售出之日起7日内无理由退货，质量问题15日内包换</p>
+                                                        <p class="MsoNormal" align="left" style="color:rgb(255, 0, 0); font-family: 'Microsoft Yahei';font-size:medium;">已激活windows系统或office的机器，无质量问题不支持7天无理由退货</p>
+                                                        <p class="MsoNormal" align="left"><br></p>
+                                                        <p class="MsoNormal" align="left"></p>
+                                                        <p class="MsoNormal" align="left"><br></p>
+                                                        <p class="MsoNormal" align="left">
+                                                            <strong>※</strong>
+                                                            客户购买商品7日内（含7日，自客户收到商品之日起计算），在保证未激活windows系统或office的机器
+                                                            <strong style="font-weight: bold;">7天无理由退货：</strong>
+                                                            <span style="font-family: 'Microsoft Yahei';font-size:medium;">
+                                                                、商品完好，产品、赠品、包装及附件齐全的前提下，可无理由退货；
+                                                                注：（1）商品返回运费由买方承担；（2）收货单据、附随保修卡、发票、包装及赠品等需一并退回卖方。
+                                                            </span>
+                                                        </p>
+                                                        <p class="MsoNormal" align="left">您可在线提交订单申请或者与华硕客服中心联系办理退换货事宜。</p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;"><br></p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;">
+                                                            <strong>※</strong>
+                                                            <strong>7天硬件质量问题退换机：</strong>
+                                                            客户购买商品7日内（含7日，自客户收到商品之日起计算）因质量问题申请售后去服务中心检测，需要提交检测单给商家客服审核，
+                                                            审核通过后,华硕商城或华硕商城授权门店提供免费上门取件服务、遇法定节假日、极端恶劣天气不可预期及控制的情况，前述服务将自动顺延；
+                                                            遇法定不可抗力的情形，卖方无需对不能履行之行为承担责任。
+                                                            <br>
+                                                        </p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;"><br></p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;"><br></p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;">
+                                                            <strong>※15天硬件</strong>
+                                                            <strong>质量问题换机：</strong>
+                                                            客户购买商品15日内（含15日，自客户收到商品之日起计算）因质量问题申请售后先去服务中心检测，需要提交检测单给商城客服审核，审核通过后，
+                                                            华硕商城或华硕授权门店提供免费快递换机服务、遇法定节假日、极端恶劣天气不可预期及控制的情况，前述服务将自动顺延；遇法定不可抗力的情形，
+                                                            卖方无需对不能履行之行为承担责任。
+                                                        </p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;"><br></p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;"><br></p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;"><strong>以下情况不予办理退换货：</strong></p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;">
+                                                            1.任何非本网站（store.asus.com.cn）出售的商品
+                                                        </p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;">
+                                                            2.未经授权的维修、误用、碰撞、疏忽、滥用、进液、事故、改动、不正确的安装所造成
+                                                            的商品质量问题，或撕毁、涂改标贴、机器序号、防伪标记；
+                                                        </p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;">
+                                                            3.已激活office的笔记本，无质量问题不支持7天无理由退货；
+                                                        </p>
+                                                        <p class="MsoNormal" align="left" style="margin: 2pt 0cm;">
+                                                            4.商品的外包装、附件、赠品、说明书不完整，发票缺失或涂改；
+                                                        </p>
+                                                    </div>
+                                                    <p class="MsoNoSpacing">华硕商品英寸与厘米换算</p>
+                                                    <p class="MsoNoSpacing">请详见，
+                                                        <a href="" style="color: rgb(0, 0, 255);">华硕商品尺寸换算对照表</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-shfw" id="shfw">
+                                            <div class="shfw-mod">
+                                                <div>
+                                                    <p class="MsoNormal" align="left">• 保修</p>
+                                                    <p class="MsoNormal" align="left">
+                                                        1年国际联保+第二年主要部件本地保修（具体保修服务以实际出货机器为准）。*保修条款依国家/地区/批次而有所不同
+                                                        <br>1年电池保修（需产品注册）
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        签收时请确认商品外包装完好无损，一旦商品包装出现破损，请您直接拒收商品，后续问题请联系客服为您处理。华硕商城为您提供
+                                                        <span lang="EN-US">7</span>
+                                                        天无理由退换货服务，
+                                                        <span lang="EN-US">15</span>
+                                                        天质量问题换货服务（退货换商品需配件齐全，外观无损）
+                                                    </p>
+                                                    <p class="MsoNormal" align="left"><br></p>
+                                                    <p class="MsoNormal" align="left" style="color:rgb(255, 0, 0);">※已激活windows系统或office的机器，无质量问题不支持7天无理由退货</p>
+                                                    <p class="MsoNormal" align="left"><br></p>
+                                                    <p class="MsoNormal" align="left">
+                                                        【笔记本（含周边配件）
+                                                        <span lang="EN-US">/</span>
+                                                        台式机
+                                                        <span lang="EN-US">/</span>
+                                                        一体机】
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        服务电话：
+                                                        <span lang="EN-US">400-600-6655</span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        <span lang="EN-US">&nbsp;</span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        【
+                                                        <span style="color: rgb(51, 51, 51); border: 1pt none windowtext; padding: 0cm;">智能手机</span>
+                                                        】
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        服务网站
+                                                        <span lang="ZH-TW">：</span>
+                                                        <span lang="EN-US">
+                                                            <a href="" >
+                                                                <span style="color:blue">http://vip.asus.com</span>
+                                                            </a>
+                                                            <br>
+                                                        </span>
+                                                        服务电话：
+                                                        <span lang="EN-US">400-000-7555</span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        <span lang="EN-US">&nbsp;</span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        【
+                                                        <span style="color: rgb(51, 51, 51); border: 1pt none windowtext; padding: 0cm;" lang="EN-US">ROG</span>
+                                                        <span style="color: rgb(51, 51, 51); border: 1pt none windowtext; padding: 0cm;">玩家国度笔记本】</span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        <span style="color: rgb(51, 51, 51); border: 1pt none windowtext; padding: 0cm;">服务电话：<span lang="EN-US">400-616-6655</span></span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left"><span lang="EN-US">&nbsp;</span></p>
+                                                    <p class="MsoNormal" align="left">
+                                                        【
+                                                        <span lang="EN-US">DIY</span>
+                                                        产品】
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        服务电话：
+                                                        <span lang="EN-US">400-620-6655</span>
+                                                        （非键鼠类）
+                                                        <span lang="EN-US"><br></span>
+                                                        服务电话：
+                                                        <span lang="EN-US">400-600-6655</span>
+                                                        （键鼠类）
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        <span lang="EN-US">&nbsp;</span>
+                                                    </p>
+                                                    <p class="MsoNormal" align="left">
+                                                        【商用产品】
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function $(did){
+                                    return document.getElementById(did);
+                                }
+                                var spxq=$("spxq");
+                                var xxcs=$("xxcs");
+                                var thsm=$("thsm");
+                                var shfw=$("shfw");
+                                var sppl=$("sppl");
+                                var t1=$("t1");
+                                var t2=$("t2");
+                                var t3=$("t3");
+                                var t4=$("t4");
+                                var t5=$("t5");
+                                function xQ(){
+                                    t1.style.borderBottom="1px solid #00a8f3";
+                                    t2.style.borderBottom="1px solid #ccc";
+                                    t3.style.borderBottom="1px solid #ccc";
+                                    t4.style.borderBottom="1px solid #ccc";
+                                    t5.style.borderBottom="1px solid #ccc";
+                                    xxcs.style.display="none";
+                                    spxq.style.display="block";
+                                }
+                                function cS(){
+                                    t2.style.borderBottom="1px solid #00a8f3";
+                                    t1.style.borderBottom="1px solid #ccc";
+                                    t3.style.borderBottom="1px solid #ccc";
+                                    t4.style.borderBottom="1px solid #ccc";
+                                    t5.style.borderBottom="1px solid #ccc";
+                                    xxcs.style.display="block";
+                                    spxq.style.display="none";
+                                }
+                                function sM(){
+                                    t2.style.borderBottom="1px solid #ccc";
+                                    t1.style.borderBottom="1px solid #ccc";
+                                    t3.style.borderBottom="1px solid #ccc";
+                                    t4.style.borderBottom="1px solid #00a8f3";
+                                    t5.style.borderBottom="1px solid #ccc";
+                                    thsm.style.display="block";
+                                    spxq.style.display="none";
+                                    xxcs.style.display="none";
+                                    shfw.style.display="none";
+                                }
+                                function fW(){
+                                    t2.style.borderBottom="1px solid #ccc";
+                                    t1.style.borderBottom="1px solid #ccc";
+                                    t3.style.borderBottom="1px solid #ccc";
+                                    t4.style.borderBottom="1px solid #ccc";
+                                    t5.style.borderBottom="1px solid #00a8f3";
+                                    thsm.style.display="none";
+                                    spxq.style.display="none";
+                                    xxcs.style.display="none";
+                                    shfw.style.display="block";
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="service">
+                <div class="service-page">
+                    <ul >
+                        <li class="qi">
+                            <img src="imgs/7days.png" width="30px" height="28px">
+                            <span>7天无理由退货</span>
+                        </li>
+                        <li class="shiwu">
+                            <img src="imgs/15days.png" width="30px" height="28px">
+                            <span>15天免费换货</span>
+                        </li>
+                        <li class="man">
+                            <img src="imgs/baoyou.png" width="30px" height="28px">
+                            <span>满69元包邮</span>
+                        </li>
+                        <li class="yuyue">
+                            <img src="imgs/weixiu.png" width="30px" height="28px">
+                            <span>预约维修服务</span>
+                        </li>
+                        <li class="last">
+                            <img src="imgs/money.png" width="30px" height="28px">
+                            <span>支持支付宝&amp;花呗分期</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="helper">
+                <div class="helper-page">
+                    <div class="helper-item" style="margin-right:136.667px;">
+                        <ul class="helper-ul">
+                            <li class="first">
+                                <a href="">公司介绍</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">关于华硕</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">华硕承诺</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">交易条款</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">特别提醒</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="helper-item" style="margin-right:136.667px;">
+                        <ul class="helper-ul">
+                            <li class="first">
+                                <a href="">购物指南</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">订单说明</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">会员注册</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">会员账户安全与信息</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">购物流程</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">积分使用说明</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">优惠券使用说明</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">常见问题</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">华硕商城服务协议说明</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">授权服务店服务说明</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="helper-item" style="margin-right:136.667px;">
+                        <ul class="helper-ul">
+                            <li class="first">
+                                <a href="">配送与付款</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">发货与签收规范</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">配送运费说明</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href=""> 配送常见问题</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">配送异常</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">付款咨询</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">发票说明</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">发票常见问题</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">蚂蚁花呗常见问题</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="helper-item" style="margin-right:0px;">
+                        <ul class="helper-ul">
+                            <li class="first">
+
+                                <a href="">服务与支持</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">华硕服务中心查询</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">华硕授权实体门店查询</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">华硕智汇家</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">ZenCare</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">ZenTalk硕粉俱乐部</a>
+                            </li>
+                            <li class="helper-content">
+                                <a href="">Giftbox</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="theme-footer">
+                    <p style="text-align: center;">&nbsp;</p>
+                    <p style="text-align: center;">有任何购物问题请联系商城客服 | 电话：400-091-9520</p>
+                    <p style="text-align: center;">公司名称：华硕电脑（上海）有限公司&nbsp;|&nbsp;电话：021-31270606</p>
+                    <p style="text-align: center;">地址：上海市闵行区金都路5077号</p>
+                    <p style="text-align: center;">沪ICP备11025349号-3&nbsp;│ ASUSTeK Computer Inc. All Rights Reserved.</p>
+                    <div style="width:230px;margin:0 auto; padding:20px 0;text-align: center;">
+                        <img src="imgs/last.png" style="text-align: center; float: left;margin-right:0px;">
+                        <p style="text-align: center; display: inline-block; text-decoration: none; height: 20px; line-height: 20px; : left; margin: 0px 0px 0px 5px; color: rgb(147, 147, 147);">
+                            <a href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">沪公网安备 31011202002313号</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
